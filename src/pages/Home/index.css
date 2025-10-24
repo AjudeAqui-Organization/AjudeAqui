@@ -1,5 +1,53 @@
+body{
+    background-color: #fd0000;
+}
 
+.slogan{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    justify-content: start;
+}
 
+.slogan > .text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
 
+.slogan > .text > span{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: poppins, sans-serif;
+    color: #000000;
+}
 
+.logo-slogan{
+    width: 300px;
+    height: auto;
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: end;
+}
 
+.btn-slogan{
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: solid black 2px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer; /* deixa o mouse em formato de mão */
+    width: fit-content; /* botão só ocupa o tamanho do texto */
+    margin-top: 10px; /* espaço do texto para o botão */
+}
+
+.btn-slogan a{
+    text-decoration: none; /* remove o sublinhado do link */
+    color: #000000; /* cor do texto do link */
+}
