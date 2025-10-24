@@ -1,13 +1,42 @@
-body{
-    background-color: #fd0000;
+
+
+
+
+body {
+    margin: 0;
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;       
+    background-attachment: fixed;
+
+}
+
+
+main {
+    height: 100vh;
+ background-image: url(/src/assets/images/img-hero-fundo.png);
 }
 
 .slogan{
+     
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
-    background-color: #ffffff;
+    /* margin-top: 223px; */
     justify-content: start;
+    border-radius: 20px;
+    align-self: center;
+    background-color: white;
+}
+
+
+main .hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .slogan > .text{
@@ -20,8 +49,16 @@ body{
 .slogan > .text > span{
     font-size: 32px;
     font-weight: bold;
-    font-family: poppins, sans-serif;
     color: #000000;
+}
+
+.slogan > .text > .sspan{
+    color: #2563EB;
+}
+
+.slogan > .text > p{
+    color: #656565;
+    font-size: 15px;
 }
 
 .logo-slogan{
@@ -31,23 +68,30 @@ body{
     margin-left: 20px;
     justify-content: center;
     align-items: end;
+    margin-top: 41px;
+    margin-bottom: 20px;
+    /* margin-right: 58px; */
 }
 
 .btn-slogan{
     background-color: #ffffff;
-    border: none;
+    border: solid black 2px;
     padding: 10px 20px;
     border-radius: 20px;
-    border: solid black 2px;
     font-size: 16px;
     font-weight: bold;
     color: #000000;
-    cursor: pointer; /* deixa o mouse em formato de mão */
-    width: fit-content; /* botão só ocupa o tamanho do texto */
-    margin-top: 10px; /* espaço do texto para o botão */
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 10px;
 }
 
 .btn-slogan a{
-    text-decoration: none; /* remove o sublinhado do link */
-    color: #000000; /* cor do texto do link */
+    text-decoration: none;
+    color: #000000;
+}
+.btn-slogan:hover{
+    background-color: #2563EB;
+    border: solid #2563EB 2px;
+    color: #ffffff;
 }
