@@ -12,6 +12,7 @@ body {
 main {
     height: 100vh;
     background-image: url(/src/assets/images/img-hero-fundo.png);
+    width: 100vw;
 }
 
 .slogan{
@@ -91,75 +92,150 @@ main .hero{
     color: #ffffff;
 }
 
+
+/* Etiquetas */
+
+
+/* Container com 2 linhas e 3 colunas */
+.card_servicos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-items: center;
+  padding: 20px 40px;
+}
+
+/* Card individual */
+.card-service {
+  width: 260px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 18px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-service:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Ícone circular azul */
+.image-flor {
+  width: 56px;
+  height: 56px;
+  background-color: #2563EB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.image-flor img {
+  width: 26px;
+  height: 26px;
+}
+
+/* Título */
+.Jardinagem {
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Texto */
+.text-card-service {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+/* Etiquetas */
 .etiquetas {
   list-style: none;
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
   justify-content: center;
   padding: 0;
-  margin-bottom: 20px;
+  margin: 0 0 16px 0;
 }
 
 .etiquetas li {
-  background: #eaeaea;
+  background: #f0f0f0;
+  border-radius: 20px;
   padding: 6px 12px;
-  border-radius: 15px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+  color: #333;
 }
 
+/* Link Saiba Mais */
 .saiba-mais {
   color: #2563EB;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
-.title-services{
-    font-size: 40px;
-    color: #000000;
-    display: flex;
-    justify-content: center;
+.saiba-mais:hover {
+  text-decoration: underline;
 }
 
-.subtitle-services{
-    font-size: 25px;
-    color: #000000;
-    display: flex;
-    justify-content: center;
+.seta-direita {
+  width: 12px;
+  height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .card_servicos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .card_servicos {
+    grid-template-columns: 1fr;
+  }
+}
+
+.title-services {
+    margin-top: 50px;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.subtitle-services {
+  display: block;
+  font-size: 18px;
+  font-weight: 550;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 32px;
+  font-family: 'Poppins', sans-serif;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
-.Jardinagem {
-    font-size: 25px;
-    color: #000000;
-    display: flex;
-    justify-content: center; 
-}
 
-.text-card-service{
-    font-size: 15px;
-    color: #656565; 
-    display: flex;
-    justify-content: center; 
-}
-
-.card-service {
-    width: 264px;
-    height: 264px;
-    display: flex;
-    border-radius: 20px;
-    background-color: red;
-}
-.image-flor{
-    width: 24px;
-    height: 19px;
-    display: flex;
-    justify-content: center;
-}
-
-.seta-direita{
-    width: 15px;
-    height: 11px;
-}
 
 
 
