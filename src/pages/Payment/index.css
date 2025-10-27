@@ -30,8 +30,8 @@ header {
 
 span:first-of-type {
     font-family: 'Poppins', sans-serif;
-    font-weight: 589;
-    font-size: 17px;
+    font-weight: 600;
+    font-size: 19px;
     color: #FFFFFF;
     width: 100%;
     text-align: center;
@@ -39,8 +39,8 @@ span:first-of-type {
 
 span:last-of-type {
     font-family: 'Poppins', sans-serif;
-    font-weight: 340;
-    font-size: 13px;
+    font-weight: 500;
+    font-size: 14px;
     color: #C1C1C1;
     width: 100%;
     text-align: center;
@@ -64,7 +64,7 @@ form {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: -20px;
     width: 900px;
     height: 500px;
     margin-top: 40px;
@@ -79,13 +79,35 @@ form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px;
+    gap: 11px;
 }
 
 .date-cvv-container {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    /* empurra os campos para as extremidades */
+    gap: 40px;
+    /* aumenta o espaço entre eles */
     width: 100%;
+}
+
+.date-cvv-container {
+    display: flex;
+    justify-content: space-between;
+    /* empurra os campos para as extremidades */
+    gap: 40px;
+    /* aumenta o espaço entre eles */
+    width: 100%;
+}
+
+.date-cvv-container .input-group:first-child {
+    flex: 2;
+    /* data de validade maior */
+}
+
+.date-cvv-container .input-group:last-child {
+    flex: 1;
+    /* CVV menor */
 }
 
 .input-group {
@@ -102,14 +124,32 @@ label {
     color: #333333;
 }
 
+label[for="infocliente"] {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 16px;
+}
+
+/* inputs com fundo branco e placeholder como texto */
 input {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     margin: 0px 0;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 10px;
     border: 1.5px solid #2563EB;
-    border-radius: 8px;
+    border-radius: 7px;
+    background: #ffffff;
+    /* garante sem preenchimento colorido */
+    color: #000000;
+    /* cor do texto digitado */
+}
+
+/* estilo opcional do placeholder (mantém só texto cinza, sem fundo) */
+input::placeholder {
+    color: #656565;
+    opacity: 1;
 }
 
 input:focus {
@@ -117,9 +157,11 @@ input:focus {
     border-color: #2563EB;
 }
 
+/* borda específica para parcelamento */
 #installments {
     border-color: #656565;
 }
+
 button {
     position: absolute;
     bottom: 40px;
@@ -134,9 +176,94 @@ button {
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    border-radius: 8px;
+    border-radius: 20px;
 }
 
 button:hover {
     background-color: #1D4ED8;
+}
+
+/* Inner box para métodos de pagamento */
+.inner-box {
+    width: 300px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px rgba(32, 20, 255, 0.33);
+    padding: 16px;
+    height: 80px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Centraliza o título dentro da inner-box */
+.inner-box label {
+    display: block;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: -5px;
+}
+
+/* Layout dos métodos de pagamento */
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    flex-wrap: nowrap;
+}
+
+/* Estilo dos labels dos métodos */
+.payment-methods label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
+    color: #000; /* texto preto */
+}
+
+/* Quadrado customizado dos radio buttons */
+.payment-methods label::before {
+    content: "";
+    display: inline-block;
+    width: 10px;  
+    height: 8px;  
+    border: 2px solid #000; /* borda preta sempre visível */
+    border-radius: 3px;
+    background: #fff;  
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover: quadrado azul preenchido e label inteiro sobe */
+.payment-methods label:hover {
+    transform: translateY(-6px); /* sobe label + quadrado */
+    box-shadow: 0 8px 16px rgba(32, 20, 255, 0.33); /* sombra mais forte */
+    color: #000; /* mantém texto preto */
+}
+
+.payment-methods label:hover::before {
+    background: #6D92E4; /* preenchimento azul */
+    /* borda continua preta */
+}
+
+/* Quadrado marcado */
+.payment-methods input[type="radio"]:checked + span::before {
+    background: #6D92E4;
+    border-color: #000; /* borda preta sempre */
+}
+
+/* Oculta o input real */
+.payment-methods input[type="radio"] {
+    display: none;
+}
+
+/* Faz o span interagir com o quadrado */
+.payment-methods label span {
+    display: flex;
+    align-items: center;
 }
