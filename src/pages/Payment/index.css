@@ -16,6 +16,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .header-content {
@@ -167,7 +168,7 @@ button {
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
-    width: 200px;
+    width: 170px;
     padding: 12px;
     background-color: #2563EB;
     color: white;
@@ -175,7 +176,7 @@ button {
     cursor: pointer;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     border-radius: 20px;
 }
 
@@ -216,23 +217,24 @@ button:hover {
 }
 
 /* Estilo dos labels dos métodos */
-.payment-methods label {
+.payment-methods label span {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 2px;
     cursor: pointer;
-    padding: 4px 8px;
+    padding: -50px 50px;
     border-radius: 6px;
     transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
-    color: #000; /* texto preto */
+    color: #656565; /* texto preto */
+    font-size: 10px;
 }
 
 /* Quadrado customizado dos radio buttons */
 .payment-methods label::before {
     content: "";
     display: inline-block;
-    width: 10px;  
-    height: 8px;  
+    width: 8px;  
+    height: 5px;  
     border: 2px solid #000; /* borda preta sempre visível */
     border-radius: 3px;
     background: #fff;  
