@@ -1,0 +1,59 @@
+.orcamento-section { padding: 40px 20px; }
+.orcamento-inner {
+  max-width: 1100px; margin: 0 auto; display: grid;
+  grid-template-columns: 1fr 420px; gap: 32px; align-items: start;
+}
+
+/* esquerda */
+.orcamento-info { padding: 24px 12px; }
+.orcamento-info h2 { font-size: 1.6rem; margin-bottom: 8px; }
+.orcamento-info .muted { color: #666; margin-bottom: 18px; }
+.benefits { list-style: none; padding: 0; margin: 0 0 24px 0; }
+.benefits li { display:flex; gap:12px; align-items:flex-start; margin-bottom:14px; }
+.benefits li strong { display:block; background:#1f6fe3; color:#fff; width:36px; height:36px; border-radius:50%; text-align:center; line-height:36px; font-weight:700; }
+.benefits li span { color:#555; font-size:0.95rem; margin-left:6px; }
+
+/* mascote */
+.mascote img { max-width:180px; display:block; margin-top:18px; }
+
+/* direita - card */
+.orcamento-card {
+  background:#fff; border-radius:28px; padding:22px; box-shadow:0 6px 18px rgba(12,24,40,0.08);
+  border:1px solid rgba(0,0,0,0.04);
+}
+.orcamento-card h3 { margin:0 0 6px 0; font-size:1.05rem; text-align:center; }
+.orcamento-card .lead { color:#777; font-size:0.9rem; text-align:center; margin-bottom:12px; }
+
+/* form */
+.orcamento-form fieldset { border:0; padding:0; margin:0; }
+.orcamento-form label { display:block; margin-bottom:10px; font-size:0.85rem; color:#333; }
+.orcamento-form label span { display:block; margin-bottom:6px; font-weight:600; font-size:0.85rem; color:#222; }
+.orcamento-form input[type="text"],
+.orcamento-form input[type="email"],
+.orcamento-form input[type="tel"],
+.orcamento-form select,
+.orcamento-form textarea {
+  width:100%; padding:12px 16px; border:1px solid #e6e6e6; border-radius:28px;
+  background:#fafafa; box-sizing:border-box; font-size:0.95rem; color:#222;
+}
+.orcamento-form textarea { border-radius:18px; padding-top:14px; }
+
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.full { margin-top:8px; }
+
+/* checkbox */
+.checkbox { display:flex; gap:8px; align-items:center; margin:12px 0; font-size:0.9rem; color:#444; }
+.checkbox input { width:16px; height:16px; }
+
+/* botão */
+.btn-primary {
+  display:block; width:100%; margin-top:12px; padding:12px 18px; border-radius:28px;
+  background: linear-gradient(180deg,#1f6fe3,#1a58cc); color:#fff; border:0; font-weight:700;
+  box-shadow: 0 6px 14px rgba(31,111,227,0.18);
+  cursor:pointer;
+}
+
+/* footer do card */
+.contact-alt { margin-top:12px; text-align:center; color:#5b6b7a; font-size:0.9rem; }
+.contact-alt a { color:#1f6fe3; text-decoration:none; }
+
