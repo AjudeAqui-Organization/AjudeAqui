@@ -1,81 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Contato - AjudeAqui</title>
+    <link rel="stylesheet" href="../../components/Header/index.css" />
     <link rel="stylesheet" href="index.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- ===== HEADER ===== -->
-    <header class="navbar">
-      <div class="container">
-        <div class="logo">
-          <img src="../../assets/images/logo.png" alt="AjudeAqui Logo" />
-        </div>
+</head>
+<body>
+    <!-- HEADER IMPORTADO -->
+    <header class="header">
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <img src="../../assets/images/logo-3d.png" alt="AjudeAqui Logo" class="logo-img">
+                <span class="logo-text">AjudeAqui</span>
+            </div>
 
-        <nav>
-          <ul class="nav-links">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-          </ul>
+            <!-- Menu Links -->
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../../pages/Home/index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="../../pages/Services/index.html" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="../../pages/Contact/index.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="../../pages/About/index.html" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <!-- Action Buttons -->
+            <div class="navbar-actions">
+                <!-- Dropdown Cadastrar -->
+                <div class="dropdown">
+                    <button class="btn-cadastrar">Cadastrar-se</button>
+                    <div class="dropdown-menu">
+                        <a href="../Costumer-Registration/index.html" class="dropdown-item">Cadastro Cliente</a>
+                        <a href="../Professional-Registration/index.html" class="dropdown-item">Cadastro Profissional</a>
+                    </div>
+                </div>
+
+                <a href="../Login/index.html" class="btn-entrar">Entrar</a>
+
+                <button class="btn-search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
         </nav>
-
-        <div class="nav-actions">
-          <select class="select-cadastrar">
-            <option>Cadastrar</option>
-            <option>Cliente</option>
-            <option>Profissional</option>
-          </select>
-          <button class="btn-entrar">Entrar</button>
-          <button class="btn-search">
-            <img src="imagens/search-icon.svg" alt="Lupa de busca" />
-          </button>
-        </div>
-      </div>
     </header>
 
-    <!-- ===== HERO SECTION ===== -->
-    <section class="hero">
-      <div class="hero-overlay">
-        <h2>Solicite seu orçamento gratuito ou tire suas dúvidas!</h2>
+    <main>
+        <h2></h2>
+        <fieldset>
+            <div>
+                <img src="" alt="">
+                <span></span>
+                <p></p>
+                <button></button>
+            </div>
+       
+        </fieldset>
 
-        <div class="cards-container">
-          <div class="card">
-            <img src="../../assets/images/whatsapp.png" alt="WhatsApp" />
-            <h3>WhatsApp</h3>
-            <p>Resposta rápida pelo WhatsApp</p>
-            <span class="phone">(11) 99999-9999</span>
-          </div>
+        <section class="orcamento-section" aria-labelledby="orcamento-title">
+  <div class="orcamento-inner">
+    <div class="orcamento-info">
+      <h2>Recupere Seus Fins de Semana</h2>
+      <p class="muted">Uma solução inteligente. Reparos, substituições, manutenção e suporte — rápido e sem complicações.</p>
 
-          <div class="card">
-            <img src="../../assets/images/phone.png" alt="Telefone" />
-            <h3>Telefone</h3>
-            <p>Atendimento limitado apenas das 08 às 18h</p>
-            <span class="phone">(11) 99999-9999</span>
-          </div>
+      <ul class="benefits">
+        <li><strong>Resposta Rápida</strong><span>Retornamos em até 2 horas durante horário comercial</span></li>
+        <li><strong>Visita Gratuita</strong><span>Agendamento de visita técnica sem compromisso</span></li>
+        <li><strong>Orçamento Transparente</strong><span>Preços claros, sem taxas ocultas</span></li>
+      </ul>
 
-          <div class="card">
-            <img src="../../assets/images/email.png" alt="E-mail" />
-            <h3>E-mail</h3>
-            <p>Contato direto com o especialista em até 2 horas.</p>
-            <span class="email">Contato@AjudeAqui.com</span>
-          </div>
-
-          <div class="card emergency">
-            <img src="../../assets/images/alert-triangle-svgrepo-com (1) 1.png" alt="Emergência 24h" />
-            <h3>Emergência 24h</h3>
-            <p>Para urgências e emergências</p>
-            <span class="phone">(11) 98765-4321</span>
-          </div>
-        </div>
+      <div class="mascote">
+        <img src="PATH/mascote.png" alt="Mascote da empresa">
       </div>
-    </section>
-  </body>
+    </div>
+
+    <aside class="orcamento-card" aria-labelledby="orcamento-title-card">
+      <h3 id="orcamento-title-card">Solicite seu Orçamento</h3>
+      <p class="lead">Preencha o formulário e entraremos em contato em até duas horas.</p>
+
+      <form class="orcamento-form" action="" method="post" novalidate>
+        <fieldset>
+          <div class="grid-2">
+            <label><span>Nome Completo *</span><input name="nome" type="text" required placeholder="Nome completo"></label>
+            <label><span>Telefone *</span><input name="telefone" type="tel" required placeholder="(11) 99999-9999"></label>
+          </div>
+
+          <label><span>E-mail *</span><input name="email" type="email" required placeholder="seu@email.com"></label>
+
+          <div class="grid-2">
+            <label><span>Serviço Desejado *</span>
+              <select name="servico" required>
+                <option value="">Selecione...</option>
+                <option value="instalacao">Instalação</option>
+                <option value="reparo">Reparo</option>
+                <option value="manutencao">Manutenção</option>
+              </select>
+            </label>
+
+            <label><span>Urgência *</span>
+              <select name="urgencia" required>
+                <option value="">Selecione...</option>
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+              </select>
+            </label>
+          </div>
+
+          <label><span>Endereço (Bairro, Cidade) *</span><input name="endereco" type="text" required placeholder="Ex: Vila Madalena, São Paulo"></label>
+
+          <label class="full"><span>Descreva o Serviço *</span><textarea name="descricao" rows="5" required placeholder="Conte-nos mais detalhes..."></textarea></label>
+
+          <label class="full"><span>Orçamento Estimado (Opcional)</span><input name="orcamento" type="text" placeholder="Ex: R$ 1.200,00"></label>
+        </fieldset>
+
+        <label class="checkbox"><input type="checkbox" name="whatsapp"> Aceito receber contato via WhatsApp</label>
+
+        <button type="submit" class="btn-primary">Solicitar Orçamento Grátis</button>
+
+        <p class="contact-alt">Ou entre em contato diretamente:
+          <a href="https://wa.me/55999999999" target="_blank" rel="noopener">WhatsApp</a> ·
+          <a href="tel:+55999999999">Telefone</a>
+        </p>
+      </form>
+    </aside>
+  </div>
+</section>
+    </main>
+     
+    <script src="../../components/Header/index.js"></script>
+</body>
 </html>
