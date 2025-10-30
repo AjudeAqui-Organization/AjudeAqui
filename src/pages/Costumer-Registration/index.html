@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <img
+          src="../../assets/images/image-profissional-p.png"
+          alt="Ícone do trabalhador"
+          class="header-icon"
+        />
+        <div class="header-text">
+          <h1>Comece agora: Preencha seu cadastro</h1>
+          <p>
+            <a
+              href="../Home/index.html"
+              style="color: inherit; text-decoration: none"
+              >Início</a
+            > / Cadastro de Cliente
+          </p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="form-container">
+        <h2>Cadastro</h2>
+        <p>Preencha seus dados para facilitar seu atendimento</p>
+        <form>
+          <fieldset>
+            <legend>
+              <img
+                src="../../assets/Icons/dados-pessoais.svg"
+                alt="Ícone Dados Pessoais"
+                class="icon"
+              />
+              Dados Pessoais
+            </legend>
+            <div class="form-group-inline">
+              <div class="form-group">
+                <label for="nome">Nome Completo *</label>
+                <input type="text" id="nome" name="nome" required />
+              </div>
+              <div class="form-group">
+                <label for="cpf">CPF *</label>
+                <input type="text" id="cpf" name="cpf" required />
+              </div>
+              </div>
+              <div class="form-group-inline">
+                <div class="form-group">
+                  <label for="rg">RG *</label>
+                  <input type="text" id="rg" name="rg" required />
+                </div>
+              <div class="form-group">
+                <label for="estado-civil">Data de Nascimento *</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required
+                />
+              </div>
+              </div>
+                <div class="form-group-inline">
+              <div class="form-group">
+                <label for="genero">Gênero</label>
+                <select id="genero" name="genero">
+                  <option value="">Selecione</option>
+                  <option value="masculino">Masculino</option>
+                  <option value="feminino">Feminino</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+                  <div class="form-group">
+                <label for="estado-civil">Estado Civil</label>
+                <select id="estado-civil" name="estado-civil">
+                  <option value="">Selecione</option>
+                  <option value="solteiro(a)">Solteiro(a)</option>
+                  <option value="casado(a)">Casado(a)</option>
+                  <option value="divorciado(a)">Divorciado(a)</option>
+                  <option value="viuvo(a)">Viúvo(a)</option>
+                </select>
+              </div>
+              </div>
+          </fieldset>
+          <fieldset>
+            <legend>
+              <img
+                src="../../assets/Icons/dados-contatos.svg"
+                alt="Ícone Dados de Contato"
+                class="icon"
+              />
+              Dados de Contato
+            </legend>
+            <div class="form-group-inline">
+              <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="confirmar-email">Confirme E-mail *</label>
+                <input
+                  type="email"
+                  id="confirmar-email"
+                  name="confirmar-email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group-inline">
+              <div class="form-group">
+                <label for="telefone">Telefone Principal *</label>
+                <input type="tel" id="telefone" name="telefone" required />
+              </div>
+              <div class="form-group">
+                <label for="whatsapp">WhatsApp *</label>
+                <input type="tel" id="whatsapp" name="whatsapp" required />
+              </div>
+            </div>
+            <div class="form-group-inline">
+              <div class="form-group">
+                <label for="telefone-emergencia"
+                  >Telefone de Emergência</label
+                >
+                <input
+                  type="text"
+                  id="telefone-emergencia"
+                  name="telefone-emergencia"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contato-emergencia">Nome do Contato de Emergência</label>
+                <input
+                  type="tel"
+                  id="contato-emergencia"
+                  name="contato-emergencia"
+                />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+  <legend>
+    <img
+      src="../../assets/Icons/localizar.svg"
+      alt="Ícone Endereço"
+      class="icon"
+    />
+    Endereço
+  </legend>
+  <div class="form-group-inline">
+  <div class="form-group">
+      <label for="cep">CEP *</label>
+      <input type="text" id="cep" name="cep" required />
+    </div>
+    <div class="form-group">
+    <label for="estado">Estado *</label>
+      <select id="estado" name="estado" required>
+        <option value="">Selecione</option>
+        <option value="ac">Acre</option>
+        <option value="al">Alagoas</option>
+        <option value="ap">Amapá</option>
+        <option value="am">Amazonas</option>
+        <option value="ba">Bahia</option>
+        <option value="ce">Ceará</option>
+        <option value="df">Distrito Federal</option>
+        <option value="es">Espírito Santo</option>
+        <option value="go">Goiás</option>
+        <option value="ma">Maranhão</option>
+        <option value="mt">Mato Grosso</option>
+        <option value="ms">Mato Grosso do Sul</option>
+        <option value="mg">Minas Gerais</option>
+        <option value="pa">Pará</option>
+        <option value="pb">Paraíba</option>
+        <option value="pr">Paraná</option>
+        <option value="pe">Pernambuco</option>
+        <option value="pi">Piauí</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="rn">Rio Grande do Norte</option>
+        <option value="rs">Rio Grande do Sul</option>
+        <option value="ro">Rondônia</option>
+        <option value="rr">Roraima</option>
+        <option value="sc">Santa Catarina</option>
+        <option value="sp">São Paulo</option>
+        <option value="se">Sergipe</option>
+        <option value="to">Tocantins</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group-inline">
+  <div class="form-group form-group-cidade">
+    <label for="cidade">Cidade *</label>
+    <input type="text" id="cidade" name="cidade" required />
+  </div>
+  <div class="form-group form-group-bairro">
+    <label for="bairro">Bairro *</label>
+    <input type="text" id="bairro" name="bairro" required />
+  </div>
+</div>
+  </div>
+  <div class="form-group-inline">
+    <div class="form-group form-group-rua-avenida" >
+      <label for="rua">Rua/Avenida *</label>
+      <input type="text" id="rua" name="rua" required />
+    </div>
+     <div class="form-group">
+    <label for="numero">Número</label>
+    <input type="text" id="numero" name="numero" />
+  </div>
+</div>
+  <div class="form-group form-group-complemento">
+    <label for="complemento">Complemento *</label>
+    <input type="text" id="complemento" name="complemento" required />
+  </div>
+<legend>
+    <img
+      src="../../assets/Icons/disponibilidade.svg"
+      alt="Ícone Disponibilidade"
+      class="icon"
+    />
+    Disponibilidade
+  </legend>
+  <div class="form-group">
+    <label>Dias da Semana Disponíveis *</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="dias" value="segunda-feira" /> Segunda-feira</label>
+      <label><input type="checkbox" name="dias" value="terca-feira" /> Terça-feira</label>
+      <label><input type="checkbox" name="dias" value="quarta-feira" /> Quarta-feira</label>
+      <label><input type="checkbox" name="dias" value="quinta-feira" /> Quinta-feira</label>
+      <label><input type="checkbox" name="dias" value="sexta-feira" /> Sexta-feira</label>
+      <label><input type="checkbox" name="dias" value="sabado" /> Sábado</label>
+      <label><input type="checkbox" name="dias" value="domingo" /> Domingo</label>
+    </div>
+  </div>
+  <div class="form-group-inline">
+    <div class="form-group">
+      <label for="horario-inicio">Horário de Início *</label>
+      <input type="time" id="horario-inicio" name="horario-inicio" required />
+    </div>
+    <div class="form-group">
+      <label for="horario-termino">Horário de Término *</label>
+      <input type="time" id="horario-termino" name="horario-termino" required />
+    </div>
+  </div>
+          </fieldset>
+          <fieldset>
+  <legend>
+    <img
+      src="../../assets/Icons/documentacao.svg"
+      alt="Ícone Documentação"
+      class="icon"
+    />
+    Dados de Acesso
+  </legend>
+  <div class="form-group-inline">
+    <div class="form-group">
+      <label for="cnpj">Senha *</label>
+      <input type="password" id="password" name="password" required />
+      <p>Mínimo 8 caracteres, incluindo letras e números</p>
+    </div>
+    <div class="form-group">
+      <label for="registro-profissional">Confirmar Senha</label>
+      <input type="password" id="confirm-password" name="confirm-password" required />
+    </div>
+  </div>
+          </fieldset>
+        </form>
+        <div class="group-next-steps">
+            <h3>Próximos Passos</h3>
+            <label>Análise do cadastro pela nossa equipe</label>
+            <br>
+            <label>Verificação de documentos e referências</label>
+            <br>
+            <label>Aprovação e início dos trabalhos</label>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 AjudeAqui</p>
+    </footer>
+  </body>
+</html>
