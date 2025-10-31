@@ -50,82 +50,212 @@
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
-    <main>
-        <span class="text-header">Solicite seu orçamento gratuito ou tire suas dúvidas!</span>
+    <main class="contact-page">
+        <section class="contact-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Solicite seu orçamento gratuito ou tire suas dúvidas!</h1>
 
-        <!-- Card 1 -->
-        <div class="card-whatsapp">
-      <div class="image-whatsapp">
-        <img src="/src/assets/Icons/whatsapp.svg" alt="WhatsApp">
-      </div>
-      <span class="WhatsApp">WhatsApp</span>
-      <p class="text-card-WhatsApp">Resposta rápida pelo WhatsApp</p>
-      <button class="btn-whatsapp" onclick="abrirPopupCopiar('(11) 99999-9999', this)">
-        (11) 99999-9999
-      </button>
-      
-      <!-- Popup de Copiar -->
-      <div class="popup-copiar" id="popupCopiar">
-        <p id="textoCopiar"></p>
-        <button class="btn-copiar-popup" onclick="copiarConteudo()">Copiar</button>
-      </div>
-    </div>
+                <div class="cards-grid">
+                    <article class="contact-card card-whatsapp">
+                        <div class="card-icon">
+                            <img src="../../assets/Icons/whatsapp.svg" alt="WhatsApp">
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>Resposta rápida pelo WhatsApp</p>
+                        <button class="card-button btn-whatsapp" onclick="abrirPopupCopiar('(11) 99999-9999', this)">
+                            (11) 99999-9999
+                        </button>
+                    </article>
 
-    <!-- Card 2 -->
-        <div class="card-telefone">
-      <div class="image-telefone">
-        <img src="/src/assets/Icons/telefone-branco.svg" alt="WhatsApp">
-      </div>
-      <span class="Telefone">Telefone</span>
-      <p class="text-card-telefone">Atendimento limitado apenas das 08 às 18h</p>
-      <button class="btn-telefone" onclick="abrirPopupCopiar('(11) 99999-9999', this)">
-        (11) 99999-9999
-      </button>
-      
-      <!-- Popup de Copiar -->
-      <div class="popup-copiar" id="popupCopiar">
-        <p id="textoCopiar"></p>
-        <button class="btn-copiar-popup" onclick="copiarConteudo()">Copiar</button>
-      </div>
-    </div>
+                    <article class="contact-card card-telefone">
+                        <div class="card-icon">
+                            <img src="../../assets/Icons/telefone-branco.svg" alt="Telefone">
+                        </div>
+                        <h3>Telefone</h3>
+                        <p>Atendimento de segunda a sábado, das 08h às 18h</p>
+                        <button class="card-button btn-telefone" onclick="abrirPopupCopiar('(11) 3333-3333', this)">
+                            (11) 3333-3333
+                        </button>
+                    </article>
 
-    <!-- Card 3 -->
-        <div class="card-email">
-      <div class="image-email">
-        <img src="/src/assets/Icons/email-branco.svg" alt="Email">
-      </div>
-      <span class="Email">Email</span>
-      <p class="text-card-email">Contato direto com o especialista em até 2 horas</p>
-      <button class="btn-email" onclick="abrirPopupCopiar('contato@AjudeAqui.com', this)">
-        contato@AjudeAqui.com
-      </button>
-      
-      <!-- Popup de Copiar -->
-      <div class="popup-copiar" id="popupCopiar">
-        <p id="textoCopiar"></p>
-        <button class="btn-copiar-popup" onclick="copiarConteudo()">Copiar</button>
-      </div>
-    </div>
+                    <article class="contact-card card-email">
+                        <div class="card-icon">
+                            <img src="../../assets/Icons/email-branco.svg" alt="Email">
+                        </div>
+                        <h3>E-mail</h3>
+                        <p>Retorno do especialista em até 2 horas úteis</p>
+                        <button class="card-button btn-email" onclick="abrirPopupCopiar('contato@ajudeaqui.com', this)">
+                            contato@ajudeaqui.com
+                        </button>
+                    </article>
 
-    <!-- Card 4 -->
-        <div class="card-Emergência">
-      <div class="image-alerta">
-        <img src="/src/assets/Icons/Alerta.svg" alt="Alerta">
-      </div>
-      <span class="Emergencia-24h">Emergência 24h</span>
-      <p class="text-card-emergencia">Para urgências e emergências</p>
-      <button class="btn-numero" onclick="abrirPopupCopiar('(11) 98765-4321', this)">
-        (11) 98765-4321
-      </button>
-      
-      <!-- Popup de Copiar -->
-      <div class="popup-copiar" id="popupCopiar">
-        <p id="textoCopiar"></p>
-        <button class="btn-copiar-popup" onclick="copiarConteudo()">Copiar</button>
-      </div>
-    </div>
+                    <article class="contact-card card-emergency">
+                        <div class="card-icon">
+                            <img src="../../assets/Icons/Alerta.svg" alt="Emergência 24h">
+                        </div>
+                        <h3>Emergência 24h</h3>
+                        <p>Atendimento imediato para urgências</p>
+                        <button class="card-button btn-emergencia" onclick="abrirPopupCopiar('(11) 98765-4321', this)">
+                            (11) 98765-4321
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
 
+        <section class="contact-panel">
+            <div class="panel-info">
+                <h2>Recupere Seus Fins de Semana</h2>
+                <p>Deixe os reparos, ajustes e manutenções com quem tem experiência e profissionais de confiança. Nossa equipe cuida de cada detalhe para você aproveitar seu tempo livre sem preocupações.</p>
 
+                <ul class="info-list">
+                    <li>
+                        <img src="../../assets/Icons/Relogio.svg" alt="Ícone relógio">
+                        <div>
+                            <h4>Resposta rápida em até 5 minutos</h4>
+                            <p>Contato imediato pelo canal que você preferir e acompanhamento até a conclusão do serviço.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../../assets/Icons/localizar.svg" alt="Ícone localização">
+                        <div>
+                            <h4>Visita técnica gratuita</h4>
+                            <p>Profissionais homologados e avaliados presencialmente para garantir segurança e qualidade.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../../assets/Icons/garantia.svg" alt="Ícone garantia">
+                        <div>
+                            <h4>Orçamento justo e transparente</h4>
+                            <p>Valores claros, opções de pagamento flexíveis e garantia estendida nos serviços contratados.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="panel-illustration">
+                    <img src="../../assets/images/image-profissional-p.png" alt="Profissional da AjudeAqui">
+                    <div class="illustration-badge">Contrate-nos e resolva seus problemas!</div>
+                </div>
+            </div>
+
+            <form class="panel-form">
+                <h3>Solicite seu Orçamento</h3>
+
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="nome-completo">Nome Completo*</label>
+                        <input type="text" id="nome-completo" name="nome-completo" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" placeholder="nome@email.com" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="telefone">Telefone*</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="servico">Serviço desejado*</label>
+                        <select id="servico" name="servico" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="jardinagem">Jardinagem</option>
+                            <option value="pintura">Pintura</option>
+                            <option value="eletrica">Elétrica</option>
+                            <option value="hidraulica">Hidráulica</option>
+                            <option value="limpeza">Limpeza</option>
+                            <option value="montagem">Montagem</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="urgencia">Urgência*</label>
+                        <select id="urgencia" name="urgencia" required>
+                            <option value="" disabled selected>Escolha a urgência</option>
+                            <option value="baixa">Pode aguardar</option>
+                            <option value="media">Próximas 24h</option>
+                            <option value="alta">Emergência</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="localizacao">Localização*</label>
+                        <input type="text" id="localizacao" name="localizacao" placeholder="Bairro, Cidade" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="horario">Melhor horário para contato</label>
+                        <input type="text" id="horario" name="horario" placeholder="Ex: das 14h às 18h">
+                    </div>
+                    <div class="form-field">
+                        <label for="orcamento">Orçamento estimado (Opcional)</label>
+                        <input type="text" id="orcamento" name="orcamento" placeholder="Ex: R$ 500,00">
+                    </div>
+                    <div class="form-field full">
+                        <label for="descricao">Descreva o serviço</label>
+                        <textarea id="descricao" name="descricao" placeholder="Conte-nos mais detalhes sobre o que você precisa."></textarea>
+                    </div>
+                    <div class="form-field checkbox-field full">
+                        <input type="checkbox" id="contato-whatsapp" name="contato-whatsapp" checked>
+                        <span>Aceito receber contato via WhatsApp e concordo com os termos de uso.</span>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Solicitar orçamento</button>
+                    <button type="button" class="btn-secondary">Falar com um consultor</button>
+                </div>
+
+                <p class="form-disclaimer">Ao enviar este formulário, nossa equipe analisa sua demanda e retorna com uma estimativa detalhada. Seu contato é 100% seguro.</p>
+
+                <div class="form-shortcuts">
+                    <button type="button" class="shortcut whatsapp">
+                        <img src="../../assets/Icons/whatsapp.svg" alt="WhatsApp">
+                        Atender via WhatsApp
+                    </button>
+                    <button type="button" class="shortcut telefone">
+                        <img src="../../assets/Icons/telefone-blue.svg" alt="Telefone">
+                        Solicitar ligação agora
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <div class="faq-container">
+                <h2>Perguntas Frequentes</h2>
+                <p class="faq-subtitle">As dúvidas mais comuns que recebemos por aqui</p>
+
+                <div class="faq-list">
+                    <details class="faq-item" open>
+                        <summary>Quanto tempo demora para receber o orçamento?</summary>
+                        <p>Após o envio do formulário, retornamos em até 2 horas úteis com uma estimativa inicial. Para casos emergenciais, o contato é imediato.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Vocês atendem emergências?</summary>
+                        <p>Sim! Temos uma equipe de plantão 24h para situações críticas. Utilize o canal de emergência para priorizar seu atendimento.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Qual é a forma de pagamento?</summary>
+                        <p>Aceitamos cartões de crédito, débito, PIX e pagamento faturado para empresas parceiras. Consulte condições especiais com o consultor.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Os serviços têm garantia?</summary>
+                        <p>Sim, todos os serviços possuem garantia mínima de 90 dias. Para contratos recorrentes, oferecemos planos de manutenção preventiva.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Vocês atendem quais regiões?</summary>
+                        <p>Atendemos toda a Grande São Paulo e cidades vizinhas. Informe sua localização para confirmarmos disponibilidade imediata.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Posso acompanhar o status do serviço?</summary>
+                        <p>Claro! Você recebe atualizações via WhatsApp e pode acompanhar o andamento pela área do cliente, com fotos e relatórios.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <div class="popup-copiar" id="popupCopiar">
+            <p id="textoCopiar"></p>
+            <button class="btn-copiar-popup" onclick="copiarConteudo()">Copiar</button>
+        </div>
     </main>
 
     <!-- FOOTER NO FUNDO -->
