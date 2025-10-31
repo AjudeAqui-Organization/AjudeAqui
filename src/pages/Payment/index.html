@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Página Pagamento</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../../assets/images/image-profissional-p.png" alt="Ícone do trabalhador" class="header-icon" />
+        </div>
+        <div class="header-content"> <span>Finalize sua compra com confiança</span> <span>Conclua seu pagamento de forma
+                rápida e segura abaixo</span> </div>
+    </header>
+    <main>
+        <section>
+            <form action="/process-payment" method="POST">
+                <div class="form-group"> <label for="infocliente"> Informações do Clientes </label> <input type="text"
+                        id="card-number" name="card-number" placeholder="Número do cartão" required> <input type="text"
+                        id="card-holder" name="card-holder" placeholder="Nome do titular" required>
+                    <div class="date-cvv-container">
+                        <div class="input-group"> <input type="text" id="expiry-date" name="expiry-date"
+                                placeholder="Validade (MM/AA)" required> </div>
+                        <div class="input-group"> <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+                        </div>
+
+                    </div> <input type="text" id="installments" name="installments" placeholder="Parcelamento" required>
+                </div>
+                <!-- Inner box para métodos de pagamento -->
+                <div class="inner-box">
+                    <label>Método de Pagamentos</label>
+                    <div class="payment-methods">
+                        <label>
+                            <input type="radio" name="payment" value="credito" required>
+                            <span>Crédito</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="debito" required>
+                            <span>Débito</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="pix" required>
+                            <span>PIX</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="boleto" required>
+                            <span>Boleto</span>
+                        </label>
+                    </div>
+                </div>
+
+               <!-- Termos e Condições: -->
+                <div class="terms-box">
+                    <label><input type="checkbox"> Li e aceito os <a href="#">Termos de Uso</a> e a <a href="#">Política
+                            de Privacidade</a></label>
+                    <label><input type="checkbox"> Autorizo o uso dos meus dados para o pagamento</label>
+                    <label><input type="checkbox"> Aceito receber atualizações sobre meu pedido e ofertas</label>
+                </div> 
+
+                <button type="submit">Concluir Pagamento </button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
