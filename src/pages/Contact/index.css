@@ -1,59 +1,278 @@
-.orcamento-section { padding: 40px 20px; }
-.orcamento-inner {
-  max-width: 1100px; margin: 0 auto; display: grid;
-  grid-template-columns: 1fr 420px; gap: 32px; align-items: start;
+/* Contact Page Styles */
+@import url('../../assets/css/global.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-/* esquerda */
-.orcamento-info { padding: 24px 12px; }
-.orcamento-info h2 { font-size: 1.6rem; margin-bottom: 8px; }
-.orcamento-info .muted { color: #666; margin-bottom: 18px; }
-.benefits { list-style: none; padding: 0; margin: 0 0 24px 0; }
-.benefits li { display:flex; gap:12px; align-items:flex-start; margin-bottom:14px; }
-.benefits li strong { display:block; background:#1f6fe3; color:#fff; width:36px; height:36px; border-radius:50%; text-align:center; line-height:36px; font-weight:700; }
-.benefits li span { color:#555; font-size:0.95rem; margin-left:6px; }
-
-/* mascote */
-.mascote img { max-width:180px; display:block; margin-top:18px; }
-
-/* direita - card */
-.orcamento-card {
-  background:#fff; border-radius:28px; padding:22px; box-shadow:0 6px 18px rgba(12,24,40,0.08);
-  border:1px solid rgba(0,0,0,0.04);
-}
-.orcamento-card h3 { margin:0 0 6px 0; font-size:1.05rem; text-align:center; }
-.orcamento-card .lead { color:#777; font-size:0.9rem; text-align:center; margin-bottom:12px; }
-
-/* form */
-.orcamento-form fieldset { border:0; padding:0; margin:0; }
-.orcamento-form label { display:block; margin-bottom:10px; font-size:0.85rem; color:#333; }
-.orcamento-form label span { display:block; margin-bottom:6px; font-weight:600; font-size:0.85rem; color:#222; }
-.orcamento-form input[type="text"],
-.orcamento-form input[type="email"],
-.orcamento-form input[type="tel"],
-.orcamento-form select,
-.orcamento-form textarea {
-  width:100%; padding:12px 16px; border:1px solid #e6e6e6; border-radius:28px;
-  background:#fafafa; box-sizing:border-box; font-size:0.95rem; color:#222;
-}
-.orcamento-form textarea { border-radius:18px; padding-top:14px; }
-
-.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
-.full { margin-top:8px; }
-
-/* checkbox */
-.checkbox { display:flex; gap:8px; align-items:center; margin:12px 0; font-size:0.9rem; color:#444; }
-.checkbox input { width:16px; height:16px; }
-
-/* botão */
-.btn-primary {
-  display:block; width:100%; margin-top:12px; padding:12px 18px; border-radius:28px;
-  background: linear-gradient(180deg,#1f6fe3,#1a58cc); color:#fff; border:0; font-weight:700;
-  box-shadow: 0 6px 14px rgba(31,111,227,0.18);
-  cursor:pointer;
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('../../assets/images/gif-jardim.gif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
-/* footer do card */
-.contact-alt { margin-top:12px; text-align:center; color:#5b6b7a; font-size:0.9rem; }
-.contact-alt a { color:#1f6fe3; text-decoration:none; }
+main {
+  flex: 1;
+  padding: 40px 20px;
+  padding-bottom: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Texto header */
+.text-header {
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0b0b0b;
+  margin-bottom: 60px;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+/* Container para os 4 cards em grid */
+main > div:not(.popup-copiar) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos dos cards */
+.card-whatsapp,
+.card-telefone,
+.card-email,
+.card-Emergência {
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-whatsapp:hover,
+.card-telefone:hover,
+.card-email:hover,
+.card-Emergência:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
+}
+
+/* Ícones dos cards */
+.image-whatsapp,
+.image-telefone,
+.image-email,
+.image-alerta {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.image-whatsapp {
+  background-color: #e7f5e7;
+}
+
+.image-telefone {
+  background-color: #e3f2fd;
+}
+
+.image-email {
+  background-color: #f3e5f5;
+}
+
+.image-alerta {
+  background-color: #ffebee;
+}
+
+.image-whatsapp img,
+.image-telefone img,
+.image-email img,
+.image-alerta img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Títulos dos cards */
+.WhatsApp,
+.Telefone,
+.Email,
+.Emergencia-24h {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0b0b0b;
+  margin-bottom: 8px;
+}
+
+/* Descrições dos cards */
+.text-card-WhatsApp,
+.text-card-telefone,
+.text-card-email,
+.text-card-emergencia {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 0 20px 0;
+  line-height: 1.5;
+}
+
+/* Botões dos cards */
+.btn-whatsapp,
+.btn-telefone,
+.btn-email,
+.btn-emergencia {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: auto;
+}
+
+.btn-whatsapp {
+  border-color: #10b981;
+  color: #10b981;
+}
+
+.btn-whatsapp:hover {
+  background-color: #10b981;
+  color: white;
+  transform: scale(1.02);
+}
+
+.btn-telefone {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.btn-telefone:hover {
+  background-color: #3b82f6;
+  color: white;
+  transform: scale(1.02);
+}
+
+.btn-email {
+  border-color: #a855f7;
+  color: #a855f7;
+}
+
+.btn-email:hover {
+  background-color: #a855f7;
+  color: white;
+  transform: scale(1.02);
+}
+
+.btn-emergencia {
+  border-color: #ef4444;
+  color: white;
+  background-color: #ef4444;
+}
+
+.btn-emergencia:hover {
+  background-color: #dc2626;
+  border-color: #dc2626;
+  transform: scale(1.02);
+}
+
+/* Estilos para o botão com número */
+.btn-numero {
+  padding: 12px 20px;
+  background-color: #2065ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.btn-numero:hover {
+  background-color: #1a4db8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(32, 101, 255, 0.3);
+}
+
+.btn-numero:active {
+  transform: translateY(0);
+}
+
+/* Popup de Copiar */
+.popup-copiar {
+  display: none;
+  position: fixed;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  z-index: 1000;
+  min-width: 200px;
+  text-align: center;
+}
+
+.popup-copiar p {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0b0b0b;
+}
+
+.btn-copiar-popup {
+  width: 100%;
+  padding: 10px 16px;
+  background-color: #2065ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-copiar-popup:hover {
+  background-color: #1a4db8;
+}
+
+.btn-copiar-popup:active {
+  transform: scale(0.98);
+}
+
+/* Footer - Ficar acima do background */
+.footer {
+  position: relative;
+  z-index: 50;
+  background-color: #1a1a1a;
+  width: 100%;
+  margin-top: auto;
+}
+
 
