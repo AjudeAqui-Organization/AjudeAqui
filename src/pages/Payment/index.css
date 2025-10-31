@@ -29,6 +29,7 @@ header {
     max-width: 800px;
 }
 
+/* Título da header*/
 span:first-of-type {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -37,11 +38,11 @@ span:first-of-type {
     width: 100%;
     text-align: center;
 }
-
+/* Sub-título da header*/
 span:last-of-type {
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 20;
     color: #C1C1C1;
     width: 100%;
     text-align: center;
@@ -59,6 +60,7 @@ section {
     min-height: calc(100vh - 80px);
     text-align: left;
     font-family: 'Poppins', sans-serif;
+     
 }
 
 form {
@@ -66,13 +68,13 @@ form {
     display: flex;
     flex-direction: column;
     gap: -20px;
-    width: 900px;
-    height: 500px;
+    width: 1072px;
+    height: 727px;
     margin-top: 40px;
     background: white;
     padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .form-group {
@@ -81,6 +83,7 @@ form {
     flex-direction: column;
     align-items: flex-start;
     gap: 11px;
+    
 }
 
 .date-cvv-container {
@@ -126,10 +129,13 @@ label {
 }
 
 label[for="infocliente"] {
+    display: inline;
+    white-space: nowrap;
     font-size: 25px;
     font-weight: 600;
     margin-top: -10px;
     margin-bottom: 16px;
+     color: #000000;
 }
 
 /* inputs com fundo branco e placeholder como texto */
@@ -140,7 +146,7 @@ input {
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
     border: 1.5px solid #2563EB;
-    border-radius: 7px;
+    border-radius: 6px;
     background: #ffffff;
     /* garante sem preenchimento colorido */
     color: #000000;
@@ -183,7 +189,7 @@ button {
 button:hover {
     background-color: #1D4ED8;
 }
-
+/*Começo da métodos de pagamento */
 /* Inner box para métodos de pagamento */
 .inner-box {
     width: 300px;
@@ -206,13 +212,15 @@ button:hover {
     font-weight: 600;
     font-size: 15px;
     margin-bottom: -5px;
+     color: #000000;
 }
 
 /* Layout dos métodos de pagamento */
 .payment-methods {
     display: flex;
     justify-content: center;
-    gap: 3px;
+    align-items: center;
+    gap: 20px;
     flex-wrap: nowrap;
 }
 
@@ -234,8 +242,8 @@ button:hover {
     content: "";
     display: inline-block;
     width: 8px;  
-    height: 5px;  
-    border: 2px solid #000; /* borda preta sempre visível */
+    height: 8px;  
+    border: 1px solid #000; /* borda preta sempre visível */
     border-radius: 3px;
     background: #fff;  
     transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
@@ -244,7 +252,6 @@ button:hover {
 /* Hover: quadrado azul preenchido e label inteiro sobe */
 .payment-methods label:hover {
     transform: translateY(-6px); /* sobe label + quadrado */
-    box-shadow: 0 8px 16px rgba(32, 20, 255, 0.33); /* sombra mais forte */
     color: #000; /* mantém texto preto */
 }
 
@@ -255,7 +262,7 @@ button:hover {
 
 /* Quadrado marcado */
 .payment-methods input[type="radio"]:checked + span::before {
-    background: #6D92E4;
+    background: #2563EB;
     border-color: #000; /* borda preta sempre */
 }
 
@@ -269,3 +276,57 @@ button:hover {
     display: flex;
     align-items: center;
 }
+/* Caixa de termos */
+/*.terms-box {
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+.terms-box label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.terms-box input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #2563EB;
+}
+
+.terms-box a {
+    color: #2563EB;
+    text-decoration: none;
+}
+
+.terms-box a:hover {
+    text-decoration: underline;
+
+}*/
+ header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-icon {
+    position: absolute;
+    right: 940px; /* ajusta pra mais ou menos direita */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px; /* opcional */
+    height: auto;
+}
+
