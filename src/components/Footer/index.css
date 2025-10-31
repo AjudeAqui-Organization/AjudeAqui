@@ -1,0 +1,354 @@
+/* ===== IMPORTS ===== */
+@import url('../../assets/css/global.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ===== FOOTER STYLES ===== */
+
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 40px 0 148px;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-wrapper {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.3fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column-1 {
+    grid-column: 1;
+}
+
+.footer-column-location {
+    grid-column: 4;
+}
+
+/* ===== REDES SOCIAIS ===== */
+
+.footer-social {
+    display: flex;
+    gap: 5px;
+    margin: 15px 0 20px 0;
+    align-items: center;
+}
+
+.social-link {
+    display: flex;
+    width: 49.96px;
+    height: 49.558px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    aspect-ratio: 49.96/49.56;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ===== LOGO ===== */
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.footer-logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.footer-logo-text {
+    color: #0066cc;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.footer-tagline {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.empresa-title {
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.footer-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.footer-title-contact {
+    margin-bottom: 12px;
+}
+
+/* ===== LINKS ===== */
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #0066cc;
+    padding-left: 4px;
+}
+
+/* ===== INFORMAÇÕES DE CONTATO ===== */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.contact-info span {
+    color: #b0b0b0;
+    display: inline;
+}
+
+/* ===== LOCALIZAÇÃO ===== */
+
+.footer-column-location {
+    grid-column: 4;
+}
+
+.map-container {
+    width: 100%;
+    height: 110px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    border: 1px solid #333333;
+}
+
+.map-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.location-address {
+    color: #b0b0b0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ===== DIVISOR ===== */
+
+.footer-divider {
+    height: 1px;
+    background: #ffffff;
+    margin: 20px 0;
+}
+
+/* ===== FOOTER BOTTOM ===== */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #b0b0b0;
+    gap: 20px;
+    position: relative;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-legal a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+    color: #0066cc;
+}
+
+/* ===== BOTÃO SCROLL TO TOP ===== */
+
+.scroll-to-top {
+    position: relative;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background-color: transparent;
+    color: #0066cc;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    margin-left: auto;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.scroll-to-top:hover {
+    background-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: none;
+}
+
+.scroll-to-top svg {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 1024px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-column-location {
+        grid-column: 1 / -1;
+    }
+
+    .map-container {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 20px 30px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-legal {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 15px 20px;
+    }
+
+    .footer-container {
+        gap: 20px;
+    }
+
+    .footer-title {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .footer-links {
+        gap: 10px;
+    }
+
+    .footer-social {
+        gap: 10px;
+    }
+
+    .social-link {
+        width: 36px;
+        height: 36px;
+    }
+
+    .scroll-to-top {
+        width: 40px;
+        height: 40px;
+    }
+
+    .scroll-to-top svg {
+        width: 20px;
+        height: 20px;
+    }
+}
