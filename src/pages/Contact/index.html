@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - AjudeAqui</title>
+    <link rel="stylesheet" href="../../components/Header/index.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../../components/Footer/index.css">
+</head>
+<body>
+    <!-- HEADER NO TOPO -->
+    <header class="header">
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <img src="../../assets/images/logo-3d.png" alt="AjudeAqui Logo" class="logo-img">
+                <span class="logo-text">AjudeAqui</span>
+            </div>
+
+            <!-- Menu Links -->
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../../pages/Home/index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="../../pages/Services/index.html" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="../../pages/Contact/index.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="../../pages/About/index.html" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <!-- Action Buttons -->
+            <div class="navbar-actions">
+                <!-- Dropdown Cadastrar -->
+                <div class="dropdown">
+                    <button class="btn-cadastrar">Cadastrar-se</button>
+                    <div class="dropdown-menu">
+                        <a href="../Costumer-Registration/index.html" class="dropdown-item">Cadastro Cliente</a>
+                        <a href="../Professional-Registration/index.html" class="dropdown-item">Cadastro Profissional</a>
+                    </div>
+                </div>
+
+                <a href="../Login/index.html" class="btn-entrar">Entrar</a>
+
+                <button class="btn-search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <span class="text-header">Solicite seu orçamento gratuito ou tire suas dúvidas!</span>
+
+        <!-- Card 1 -->
+        <div class="card-whatsapp">
+      <div class="image-whatsapp">
+        <img src="/src/assets/Icons/whatsapp.svg" alt="WhatsApp">
+      </div>
+      <span class="WhatsApp">WhatsApp</span>
+      <p class="text-card-WhatsApp">Resposta rápida pelo WhatsApp</p>
+      <button class="btn-whatsapp" onclick="abrirPopupCopiar('(11) 99999-9999', this)">
+        (11) 99999-9999
+      </button>
+      
+      <!-- Popup de Copiar -->
+      <div class="popup-copiar" id="popupCopiar">
+        <p id="textoCopiar"></p>
+        <button class="btn-copiar-popup" onclick="copiarConteudo()">Copiar</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+        <div class="card-telefone">
+      <div class="image-telefone">
+        <img src="/src/assets/Icons/telefone-branco.svg" alt="WhatsApp">
+      </div>
+      <span class="Telefone">Telefone</span>
+      <p class="text-card-telefone">Atendimento limitado apenas das 08 às 18h</p>
+      <button class="btn-telefone" onclick="abrirPopupCopiar('(11) 99999-9999', this)">
+        (11) 99999-9999
+      </button>
+      
+      <!-- Popup de Copiar -->
+      <div class="popup-copiar" id="popupCopiar">
+        <p id="textoCopiar"></p>
+        <button class="btn-copiar-popup" onclick="copiarConteudo()">Copiar</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+        <div class="card-email">
+      <div class="image-email">
+        <img src="/src/assets/Icons/email-branco.svg" alt="Email">
+      </div>
+      <span class="Email">Email</span>
+      <p class="text-card-email">Contato direto com o especialista em até 2 horas</p>
+      <button class="btn-email" onclick="abrirPopupCopiar('contato@AjudeAqui.com', this)">
+        contato@AjudeAqui.com
+      </button>
+      
+      <!-- Popup de Copiar -->
+      <div class="popup-copiar" id="popupCopiar">
+        <p id="textoCopiar"></p>
+        <button class="btn-copiar-popup" onclick="copiarConteudo()">Copiar</button>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+        <div class="card-Emergência">
+      <div class="image-alerta">
+        <img src="/src/assets/Icons/Alerta.svg" alt="Alerta">
+      </div>
+      <span class="Emergencia-24h">Emergência 24h</span>
+      <p class="text-card-emergencia">Para urgências e emergências</p>
+      <button class="btn-numero" onclick="abrirPopupCopiar('(11) 98765-4321', this)">
+        (11) 98765-4321
+      </button>
+      
+      <!-- Popup de Copiar -->
+      <div class="popup-copiar" id="popupCopiar">
+        <p id="textoCopiar"></p>
+        <button class="btn-copiar-popup" onclick="copiarConteudo()">Copiar</button>
+      </div>
+    </div>
+
+
+    </main>
+
+    <!-- FOOTER NO FUNDO -->
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-container">
+                <!-- Seção Logo, Redes Sociais e Empresa -->
+                <div class="footer-column footer-column-1">
+                    <div class="footer-logo">
+                        <img src="../../assets/images/logo-3d-Sem_Fundo.png" alt="AjudeAqui Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">AjudeAqui</span>
+                    </div>
+                    <p class="footer-tagline">Mais Vida, Menos Conserto.</p>
+                    
+                    <div class="footer-social">
+                        <a href="#" class="social-link" title="TikTok">
+                            <img src="../../assets/Icons/Tiktok.svg" alt="TikTok">
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <img src="../../assets/Icons/Instagram-icon-colorido.svg" alt="Instagram">
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <img src="../../assets/images/LinkedIn.png" alt="LinkedIn">
+                        </a>
+                        <a href="#" class="social-link" title="WhatsApp">
+                            <img src="../../assets/Icons/whatsapp-footer.svg" alt="WhatsApp">
+                        </a>
+                    </div>
+
+                    <h4 class="footer-title empresa-title">Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#como-funciona">Como Funciona</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Seção Serviços -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="#jardinagem">Jardinagem</a></li>
+                        <li><a href="#pintura">Pintura</a></li>
+                        <li><a href="#montagem">Montagem</a></li>
+                        <li><a href="#eletrica">Elétrica</a></li>
+                        <li><a href="#hidraulica">Hidráulica</a></li>
+                        <li><a href="#limpeza">Limpeza</a></li>
+                        <li><a href="#manutencao">Manutenção</a></li>
+                    </ul>
+                </div>
+
+                <!-- Seção Contato -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Contato</h4>
+                    <div class="contact-info">
+                        <p>
+                            <img src="../../assets/Icons/telefone-blue.svg" alt="Telefone" class="contact-icon">
+                          
+                            <span>(11) 3333-3333</span>
+                        </p>
+                        <p>
+                            <img src="../../assets/Icons/whatssapp-blue.svg" alt="WhatsApp" class="contact-icon">
+                           
+                            <span>(11) 99999-9999</span>
+                        </p>
+                        <p>
+                            <img src="../../assets/Icons/email.svg" alt="E-mail" class="contact-icon">
+                          
+                            <span>@ajudeaqui.com</span>
+                        </p>
+                        <p>
+                            <img src="../../assets/Icons/endereco.svg" alt="Localização" class="contact-icon">
+                         
+                            <span>São Paulo, SP</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Seção Localização -->
+                <div class="footer-column footer-column-location">
+                    <h4 class="footer-title">Nossa Localização</h4>
+                    <div class="map-container">
+                        <img src="../../assets/images/maps 1.png" alt="Mapa de localização">
+                    </div>
+                    <p class="location-address">Av. República do Líbano, 000<br>Moema, São Paulo - SP</p>
+                </div>
+            </div>
+
+            <!-- Divisor -->
+            <div class="footer-divider"></div>
+
+            <!-- Rodapé com Copyright e Links Legais -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 ServicesHome. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#privacidade">Política de Privacidade</a>
+                    <a href="#termos">Termos de uso</a>
+                </div>
+                <!-- Botão Scroll to Top -->
+                <button class="scroll-to-top" id="scrollToTop" title="Voltar ao topo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="18 15 12 9 6 15"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../components/Header/index.js"></script>
+    <script src="index.js"></script>
+    <script src="../../components/Footer/index.js"></script>
+     
+
+  
+</body>
+</html>

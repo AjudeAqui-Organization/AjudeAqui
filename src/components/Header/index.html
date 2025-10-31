@@ -1,333 +1,51 @@
-<!-- Header Component --><!-- Partial: Header AjudeAqui --><!-- Partial: Header AjudeAqui - Componente semântico --><!-- Partial: Header AjudeAqui - Componente semântico -->
-
-<header class="header">
-
-  <div class="header-container">
-
-    <!-- Logo -->
-
-    <div class="logo"><header class="ajudeaqui-header" role="banner"><!--
-
-      <img src="../../assets/images/logo.png" alt="AjudeAqui" />
-
-    </div>  <div class="header-inner">
-
-
-
-    <!-- Navegação -->    <!-- Logo --><header class="ajudeaqui-header" role="banner">    Partial: Header AjudeAqui
-
-    <nav class="nav">
-
-      <a href="#">Início</a>    <a class="logo" href="#" aria-label="AjudeAqui - Início">
-
-      <a href="#">Serviços</a>
-
-      <a href="#">Sobre</a>      <img src="../../assets/images/logo.png" alt="AjudeAqui" />  <div class="header-inner">
-
-      <a href="#">Contato</a>
-
-    </nav>    </a>
-
-
-
-    <!-- Botões e Busca -->    <!-- Logo -->    Uso:
-
-    <div class="actions">
-
-      <button class="btn btn-secondary">Cadastrar</button>    <!-- Navegação principal -->
-
-      <button class="btn btn-primary">Entrar</button>
-
-      <button class="search-btn" aria-label="Buscar">    <nav class="main-nav" aria-label="Navegação principal">    <a class="logo" href="#" aria-label="AjudeAqui - Início">        - Inclua este arquivo dentro do <body> das suas páginas onde deseja o header.
-
-        <img src="../../assets/Icons/lupa-preta.svg" alt="" />
-
-      </button>      <ul class="nav-list">
-
-    </div>
-
-  </div>        <li><a href="#">Início</a></li>      <img src="../../assets/images/logo.png" alt="AjudeAqui" />        - O CSS global já é importado dentro de `index.css` (via @import). Garanta que
-
-</header>
-
-        <li><a href="#">Serviços</a></li>
-
-        <li><a href="#">Sobre</a></li>    </a>            o caminho relativo esteja correto quando incluir o partial.
-
-        <li><a href="#">Contato</a></li>
-
-      </ul>-->
-
-    </nav>
-
-    <!-- Navegação principal -->
-
-    <!-- Ações à direita -->
-
-    <div class="header-actions">    <nav class="main-nav" aria-label="Navegação principal"><!-- Header semântico (partial) -->
-
-      <div class="btn-group">
-
-        <button id="btnCadastrar" class="btn btn-outline" type="button" aria-haspopup="dialog" aria-expanded="false">      <ul class="nav-list"><header class="ajudeaqui-header" role="banner">
-
-          Cadastrar
-
-          <span class="chev" aria-hidden="true">▾</span>        <li><a href="#">Início</a></li>    <div class="header-inner">
-
-        </button>
-
-        <a href="#" class="btn btn-primary">Entrar</a>        <li><a href="#">Serviços</a></li>        <a class="logo" href="../../pages/Home/index.html" aria-label="AjudeAqui - Início">
-
-      </div>
-
-        <li><a href="#">Sobre</a></li>            <img src="../../assets/images/logo.png" alt="AjudeAqui" />
-
-      <button class="search-btn" type="button" aria-label="Abrir busca">
-
-        <img src="../../assets/Icons/lupa-preta.svg" alt="" />        <li><a href="#">Contato</a></li>        </a>
-
-      </button>
-
-    </div>      </ul>
-
-  </div>
-
-</header>    </nav>        <nav class="main-nav" aria-label="Navegação principal">
-
-
-
-<!-- Modal de cadastro -->            <ul>
-
-<div id="cadModal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" hidden aria-labelledby="cadTitle">
-
-  <div class="modal-content">    <!-- Ações à direita (botões + busca) -->                <li><a href="../../pages/Home/index.html">Início</a></li>
-
-    <button class="modal-close" type="button" aria-label="Fechar">
-
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">    <div class="header-actions">                <li><a href="../../pages/Services/index.html">Serviços</a></li>
-
-        <line x1="18" y1="6" x2="6" y2="18"></line>
-
-        <line x1="6" y1="6" x2="18" y2="18"></line>      <div class="btn-group">                <li><a href="../../pages/About/index.html">Sobre</a></li>
-
-      </svg>
-
-    </button>        <button id="btnCadastrar" class="btn btn-outline" type="button" aria-haspopup="dialog" aria-expanded="false">                <li><a href="../../pages/Contact/index.html">Contato</a></li>
-
-    <h2 id="cadTitle" class="modal-title">Cadastrar</h2>
-
-    <p class="modal-desc">Escolha o tipo de cadastro:</p>          Cadastrar            </ul>
-
-    <div class="modal-actions">
-
-      <a href="#" class="modal-btn modal-btn-outline">Cadastro Cliente</a>          <span class="chev" aria-hidden="true">▾</span>        </nav>
-
-      <a href="#" class="modal-btn modal-btn-primary">Cadastro Profissional</a>
-
-    </div>        </button>
-
-  </div>
-
-</div>        <a href="#" class="btn btn-primary">Entrar</a>        <div class="header-actions">
-
-
-
-<!-- Script do modal -->      </div>            <div class="btn-group">
-
-<script>
-
-(function() {                <button id="btnCadastrar" class="btn btn-outline btn-cadastrar" type="button" aria-haspopup="dialog" aria-expanded="false">
-
-  const btnCadastrar = document.getElementById('btnCadastrar');
-
-  const modal = document.getElementById('cadModal');      <button class="search-btn" type="button" aria-label="Abrir busca">                    Cadastrar
-
-  const modalClose = modal?.querySelector('.modal-close');
-
-  let lastFocused = null;        <img src="../../assets/Icons/lupa-preta.svg" alt="" />                    <span class="chev" aria-hidden="true">▾</span>
-
-
-
-  function openModal() {      </button>                </button>
-
-    if (!modal) return;
-
-    lastFocused = document.activeElement;    </div>                <a class="btn btn-primary btn-entrar" href="../../pages/Login/index.html">Entrar</a>
-
-    modal.hidden = false;
-
-    modal.setAttribute('aria-hidden', 'false');  </div>            </div>
-
-    btnCadastrar?.setAttribute('aria-expanded', 'true');
-
-    modal.querySelector('.modal-btn')?.focus();</header>
-
-    document.addEventListener('keydown', handleKeyDown);
-
-  }            <button class="search-btn" type="button" aria-label="Abrir busca">
-
-
-
-  function closeModal() {<!-- Modal de cadastro -->                <img src="../../assets/Icons/lupa-preta.svg" alt="buscar" />
-
-    if (!modal) return;
-
-    modal.hidden = true;<div id="cadModal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" hidden aria-labelledby="cadTitle">            </button>
-
-    modal.setAttribute('aria-hidden', 'true');
-
-    btnCadastrar?.setAttribute('aria-expanded', 'false');  <div class="modal-content">        </div>
-
-    lastFocused?.focus();
-
-    document.removeEventListener('keydown', handleKeyDown);    <button class="modal-close" type="button" aria-label="Fechar">    </div>
-
-  }
-
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"></header>
-
-  function handleKeyDown(e) {
-
-    if (e.key === 'Escape') closeModal();        <line x1="18" y1="6" x2="6" y2="18"></line>
-
-  }
-
-        <line x1="6" y1="6" x2="18" y2="18"></line><!-- Modal de cadastro (invisível por padrão) -->
-
-  btnCadastrar?.addEventListener('click', openModal);
-
-  modalClose?.addEventListener('click', closeModal);      </svg><div id="cadModal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" hidden>
-
-  modal?.addEventListener('click', (e) => {
-
-    if (e.target === modal) closeModal();    </button>    <div class="modal" role="document">
-
-  });
-
-})();    <h2 id="cadTitle" class="modal-title">Cadastrar</h2>        <button class="modal-close" aria-label="Fechar cadastro">×</button>
-
-</script>
-
-    <p class="modal-desc">Escolha o tipo de cadastro:</p>        <h2 id="cadTitle">Cadastrar</h2>
-
-    <div class="modal-actions">        <p class="modal-desc">Escolha o tipo de cadastro:</p>
-
-      <a href="#" class="modal-btn modal-btn-outline">Cadastro Cliente</a>        <div class="modal-actions">
-
-      <a href="#" class="modal-btn modal-btn-primary">Cadastro Profissional</a>            <a class="modal-btn modal-btn-outline" href="../../pages/Costumer-Registration/index.html">Cadastro Cliente</a>
-
-    </div>            <a class="modal-btn modal-btn-primary" href="../../pages/Professional-Registration/index.html">Cadastro Profissional</a>
-
-  </div>        </div>
-
-</div>    </div>
-
-</div>
-
-<!-- Script para funcionalidade do modal -->
-
-<script><!-- Script simples para abrir/fechar o modal de cadastro -->
-
-  (function() {<script>
-
-    const btnCadastrar = document.getElementById('btnCadastrar');    (function(){
-
-    const modal = document.getElementById('cadModal');        const btn = document.getElementById('btnCadastrar');
-
-    const modalClose = modal?.querySelector('.modal-close');        const modal = document.getElementById('cadModal');
-
-    let lastFocused = null;        const closeBtn = modal && modal.querySelector('.modal-close');
-
-        let lastFocused = null;
-
-    function openModal() {
-
-      if (!modal) return;        function openModal(){
-
-      lastFocused = document.activeElement;            if(!modal) return;
-
-      modal.hidden = false;            lastFocused = document.activeElement;
-
-      modal.setAttribute('aria-hidden', 'false');            modal.hidden = false;
-
-      btnCadastrar?.setAttribute('aria-expanded', 'true');            modal.setAttribute('aria-hidden','false');
-
-      const firstBtn = modal.querySelector('.modal-btn');            btn.setAttribute('aria-expanded','true');
-
-      firstBtn?.focus();            // focus first actionable element
-
-      document.addEventListener('keydown', handleKeyDown);            const focusable = modal.querySelector('.modal-btn') || closeBtn;
-
-    }            focusable && focusable.focus();
-
-            document.body.classList.add('modal-open');
-
-    function closeModal() {            // trap simple: listen keydown
-
-      if (!modal) return;            document.addEventListener('keydown', onKeyDown);
-
-      modal.hidden = true;        }
-
-      modal.setAttribute('aria-hidden', 'true');
-
-      btnCadastrar?.setAttribute('aria-expanded', 'false');        function closeModal(){
-
-      lastFocused?.focus();            if(!modal) return;
-
-      document.removeEventListener('keydown', handleKeyDown);            modal.hidden = true;
-
-    }            modal.setAttribute('aria-hidden','true');
-
-            btn.setAttribute('aria-expanded','false');
-
-    function handleKeyDown(e) {            document.body.classList.remove('modal-open');
-
-      if (e.key === 'Escape') {            lastFocused && lastFocused.focus();
-
-        closeModal();            document.removeEventListener('keydown', onKeyDown);
-
-      }        }
-
-    }
-
-        function onKeyDown(e){
-
-    btnCadastrar?.addEventListener('click', openModal);            if(e.key === 'Escape') closeModal();
-
-    modalClose?.addEventListener('click', closeModal);            // keep simple focus trap
-
-    modal?.addEventListener('click', (e) => {            if(e.key === 'Tab'){
-
-      if (e.target === modal) closeModal();                const focusable = modal.querySelectorAll('a, button');
-
-    });                if(focusable.length === 0) return;
-
-  })();                const first = focusable[0];
-
-</script>                const last = focusable[focusable.length -1];
-
-                if(e.shiftKey && document.activeElement === first){
-                    e.preventDefault(); last.focus();
-                } else if(!e.shiftKey && document.activeElement === last){
-                    e.preventDefault(); first.focus();
-                }
-            }
-        }
-
-        if(btn){
-            btn.addEventListener('click', function(e){
-                e.preventDefault();
-                openModal();
-            });
-        }
-
-        if(closeBtn){ closeBtn.addEventListener('click', closeModal); }
-
-        // click outside to close
-        if(modal){
-            modal.addEventListener('click', function(e){
-                if(e.target === modal) closeModal();
-            });
-        }
-    })();
-</script>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header - AjudeAqui</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <img src="../../assets/images/logo-3d.png" alt="AjudeAqui Logo" class="logo-img">
+                <span class="logo-text">AjudeAqui</span>
+            </div>
+
+            <!-- Menu Links -->
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../../pages/Home/index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="../../pages/Services/index.html" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="../../pages/Contact/index.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="../../pages/About/index.html" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <!-- Action Buttons -->
+            <div class="navbar-actions">
+                <!-- Dropdown Cadastrar -->
+                <div class="dropdown">
+                    <button class="btn-cadastrar">Cadastrar-se</button>
+                    <div class="dropdown-menu">
+                        <a href="../../pages/Costumer-Registration/index.html" class="dropdown-item">Cadastro Cliente</a>
+                        <a href="../../pages/Professional-Registration/index.html" class="dropdown-item">Cadastro Profissional</a>
+                    </div>
+                </div>
+
+                <a href="../../pages/Login/index.html" class="btn-entrar">Entrar</a>
+
+                <button class="btn-search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <script src="index.js"></script>
+</body>
+</html>
