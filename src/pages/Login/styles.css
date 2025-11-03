@@ -1,0 +1,41 @@
+:root {
+    --full-blue: #2563eb;
+    --full-white: #ffffff;
+}
+
+/* garantir que a raiz ocupe a altura total e remover margens padrão */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+}
+
+/* corpo como um flex container para centralizar a seção (card) */
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--full-blue);
+    color: var(--full-white);
+    font-family: Arial, sans-serif;
+}
+
+/* seção que aparece como um cartão centralizado, menor que a viewport */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: min(90%, 560px);
+    padding: 10rem;
+    margin: auto;
+    background-color: var(--full-white);
+    color: var(--full-blue);
+    border-radius: 16px;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.login-container h3 {
+    font-size: 2rem;
+}
