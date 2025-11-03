@@ -33,7 +33,7 @@
                 </div>
                 <!-- Inner box para métodos de pagamento -->
                 <div class="inner-box">
-                    <label>Método de Pagamento:</label>
+                    <label>Método de Pagamentos</label>
                     <div class="payment-methods">
                         <label>
                             <input type="radio" name="payment" value="credito" required>
@@ -44,26 +44,65 @@
                             <span>Débito</span>
                         </label>
                         <label>
-                            <input type="radio" name="payment" value="boleto" required>
-                            <span>Boleto</span>
-                        </label>
-                        <label>
                             <input type="radio" name="payment" value="pix" required>
                             <span>PIX</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="boleto" required>
+                            <span>Boleto</span>
                         </label>
                     </div>
                 </div>
 
-               <!-- Termos e Condições:
+               <!-- Termos e Condições: -->
                 <div class="terms-box">
                     <label><input type="checkbox"> Li e aceito os <a href="#">Termos de Uso</a> e a <a href="#">Política
                             de Privacidade</a></label>
                     <label><input type="checkbox"> Autorizo o uso dos meus dados para o pagamento</label>
                     <label><input type="checkbox"> Aceito receber atualizações sobre meu pedido e ofertas</label>
-                </div> -->
+                    <button type="submit">Concluir Pagamento </button>
+                </div> 
 
-                <button type="submit">Concluir Pagamento </button>
+                
+
+
             </form>
+
+            <!-- Resumo do Pedido -->
+  <div class="order-summary">
+    <h2>Resumo do pedido</h2>
+
+    <div class="item">
+      <span>Serviço de Jardinagem</span>
+      <span>R$190,90</span>
+    </div>
+
+    <div class="item">
+      <span>Serviço de Limpeza</span>
+      <span>R$100,00</span>
+    </div>
+
+    <div class="subtotal">
+      <span>Subtotal</span>
+      <span>R$290,90</span>
+    </div>
+
+    <div class="taxa">
+      <span>Taxa de locomoção</span>
+      <span>Grátis</span>
+    </div>
+
+    <div class="total">
+      <span>TOTAL</span>
+      <span>R$290,90</span>
+    </div>
+
+    <div class="secure">
+      <img src="/AjudeAqui/src/assets/Icons/cadeado-verde.svg" alt="cadeado">
+      <span>Pagamento seguro</span>
+    </div>
+  </div>
+</section>
         </section>
     </main>
 </body>

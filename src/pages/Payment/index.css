@@ -8,6 +8,21 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f5f5f5;
 }
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-icon {
+    position: absolute;
+    right: 940px; /* ajusta pra mais ou menos direita */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px; /* opcional */
+    height: auto;
+}
 
 header {
     width: 100%;
@@ -75,10 +90,12 @@ form {
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+
+    
 }
 
 .form-group {
-    width: 300px;
+    width: 485px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -99,19 +116,20 @@ form {
     display: flex;
     justify-content: space-between;
     /* empurra os campos para as extremidades */
-    gap: 40px;
+    gap: 30px;
     /* aumenta o espaço entre eles */
     width: 100%;
 }
 
 .date-cvv-container .input-group:first-child {
     flex: 2;
+    width: 320px;
     /* data de validade maior */
 }
 
 .date-cvv-container .input-group:last-child {
-    flex: 1;
-    /* CVV menor */
+    flex: 0 0 100px;
+    width: 100px;
 }
 
 .input-group {
@@ -157,6 +175,7 @@ input {
 input::placeholder {
     color: #656565;
     opacity: 1;
+ 
 }
 
 input:focus {
@@ -192,10 +211,11 @@ button:hover {
 /*Começo da métodos de pagamento */
 /* Inner box para métodos de pagamento */
 .inner-box {
-    width: 300px;
+    width: 485px;
     background: #ffffff;
     border-radius: 12px;
-    box-shadow: 0px 4px 4px rgba(32, 20, 255, 0.33);
+     box-shadow: 0px 4px 4px rgba(32, 20, 255, 0.33), /* sombra embaixo (azul) */
+                0 -4px 20px rgba(0, 0, 0, 0.17); /* sombra em cima (azul) */
     padding: 16px;
     height: 80px;
     margin-top: 20px;
@@ -210,42 +230,56 @@ button:hover {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 15px;
-    margin-bottom: -5px;
-     color: #000000;
+    font-size: 14px;
+    color: #000000;
+    position: relative;
+    top: -8px; /* ajuste o valor negativo para subir mais */
 }
 
+
 /* Layout dos métodos de pagamento */
+/* Container geral — mantém todos os labels lado a lado */
 .payment-methods {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    flex-wrap: nowrap;
+    gap: 20px;          /* espaço entre os métodos */
+    flex-wrap: nowrap;  /* impede quebra de linha */
+    white-space: nowrap;
 }
 
-/* Estilo dos labels dos métodos */
-.payment-methods label span {
+/* Cada label — quadrado + texto lado a lado */
+.payment-methods label {
     display: flex;
     align-items: center;
-    gap: 2px;
+    gap: 6px;
     cursor: pointer;
-    padding: -50px 50px;
-    border-radius: 6px;
+    white-space: nowrap;
+}
+
+/* Texto ao lado do quadrado */
+.payment-methods label span {
+    display: inline-block;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    position: relative;
+    top: 3px; /* ajuste fino */
     transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
-    color: #656565; /* texto preto */
-    font-size: 10px;
 }
 
 /* Quadrado customizado dos radio buttons */
 .payment-methods label::before {
     content: "";
     display: inline-block;
-    width: 8px;  
+    width: 10px;  
     height: 8px;  
     border: 1px solid #000; /* borda preta sempre visível */
-    border-radius: 3px;
+    border-radius: 2px;
     background: #fff;  
+     position: relative;
+    top: 3px;
     transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
@@ -277,56 +311,53 @@ button:hover {
     align-items: center;
 }
 /* Caixa de termos */
-/*.terms-box {
-    width: 100%;
-    max-width: 600px;
+.terms-box {
+    width: 485px;
+    height: 102px;
+    font-size: 10px;
+    font-weight: 400;
     background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px 30px;
-    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow:0px 4px 4px rgba(32, 20, 255, 0.27), /* sombra embaixo (azul) */
+                0 -4px 20px rgba(0, 0, 0, 0.15); /* sombra em cima (azul) */ 
+                
+    padding: 18px 24px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: -10px;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
     color: #000;
 }
 
 .terms-box label {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .terms-box input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 10px;
     accent-color: #2563EB;
 }
 
 .terms-box a {
     color: #2563EB;
-    text-decoration: none;
 }
 
-.terms-box a:hover {
-    text-decoration: underline;
 
-}*/
- header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.header-icon {
+.order-summary {
     position: absolute;
-    right: 940px; /* ajusta pra mais ou menos direita */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 150px; /* opcional */
-    height: auto;
+    top: 325px;
+    right: 170px;
+    width: 420px;
+    background:   #b30000;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    
 }
-
