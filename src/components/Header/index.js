@@ -1,36 +1,55 @@
- const header = document.querySelector('.header');
-        let lastScrollTop = 0;
-        let scrollThreshold = 50;
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('.header');
+    if (!header) {
+        return;
+    }
 
-        window.addEventListener('scroll', () => {
-            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        const SCROLL_THRESHOLD = 40;
+    let lastScrollY = window.pageYOffset;
+    let ticking = false;
 
-            // Se estou scrollando para baixo
-            if (currentScroll > lastScrollTop && currentScroll > scrollThreshold) {
-                header.style.transform = 'translateY(-100%)';
-            } 
-            // Se estou scrollando para cima
-            else {
-                header.style.transform = 'translateY(0)';
+    const updateHeaderOnScroll = () => {
+        const currentScroll = window.pageYOffset;
+            if (currentScroll > SCROLL_THRESHOLD) {
+                header.classList.add('header--scrolled');
+
+                if (currentScroll > lastScrollY) {
+                    header.classList.add('header--hidden');
+                } else if (currentScroll < lastScrollY) {
+                    header.classList.remove('header--hidden');
+                }
+            } else {
+                header.classList.remove('header--scrolled');
+                header.classList.remove('header--hidden');
             }
 
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-        });
+        lastScrollY = currentScroll <= 0 ? 0 : currentScroll;
+        ticking = false;
+    };
 
-        document.querySelectorAll('.dropdown').forEach(dropdown => {
-            const button = dropdown.querySelector('button');
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(updateHeaderOnScroll);
+            ticking = true;
+        }
+    });
+
+        document.querySelectorAll('.dropdown').forEach((dropdown) => {
             const menu = dropdown.querySelector('.dropdown-menu');
-            
-            let hideTimeout;
+            if (!menu) {
+                return;
+            }
+        let hideTimeout;
 
-            dropdown.addEventListener('mouseenter', () => {
-                clearTimeout(hideTimeout);
-                menu.style.display = 'block';
-            });
-
-            dropdown.addEventListener('mouseleave', () => {
-                hideTimeout = setTimeout(() => {
-                    menu.style.display = 'none';
-                }, 300);
-            });
+        dropdown.addEventListener('mouseenter', () => {
+            clearTimeout(hideTimeout);
+            menu.style.display = 'block';
         });
+
+        dropdown.addEventListener('mouseleave', () => {
+            hideTimeout = setTimeout(() => {
+                menu.style.display = 'none';
+            }, 300);
+        });
+    });
+});
