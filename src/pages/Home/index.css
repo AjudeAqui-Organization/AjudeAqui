@@ -10,13 +10,10 @@ body {
     
   }
 
-  header{
-    background-image: url(/src/assets/images/img-hero-fundo.png);
-  }
   
   main {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +21,7 @@ body {
     background-image: url(/src/assets/images/img-hero-fundo.png); 
   
 }
+
 
 .slogan{
      
@@ -54,7 +52,6 @@ main .hero{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-left: 25px;
     margin-bottom: 60px;
     margin-left: 45px;
 
@@ -221,37 +218,7 @@ main .hero{
   height: auto;
 }
 
-/* Responsividade */
-@media (max-width: 900px) {
-  .card_servicos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (min-width: 1200px) {
-  .Services {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 900px) {
-  .Services {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .card_servicos,
-  .Services {
-    grid-template-columns: 1fr;
-    padding: 16px;
-  }
-  
-  .card-life {
-    width: 100%;
-    padding: 20px;
-  }
-}
 
 .title-service {
   margin-top: 50px;
@@ -331,7 +298,6 @@ main .hero{
   gap: 32px;
   justify-items: center;
   padding: 20px 40px;
-  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -443,8 +409,6 @@ main .hero{
 
   max-width: 70%;
 
-
-
-
-
 }
+
+
