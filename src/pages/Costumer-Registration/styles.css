@@ -222,21 +222,16 @@ textarea {
 .btn-enviar {
   padding: 10px 20px;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
   margin-bottom: 30px;
 }
 
 .btn-voltar {
-  background-color: #000000;
+  background-color: #ffffff;
   color: #2563eb;
-  /* linha fina delimitadora entre Voltar e Enviar */
-  border-right: 1px solid #2563eb;
-  box-shadow: none;
-  transition: none;
-  background-clip: padding-box;
-  padding-right: 22px; /* dá espaço entre o texto e a linha */
-  margin-right: 12px; /* separa visualmente do botão Enviar */
+  border: 1px solid #2563eb;
+  transition: background-color 0.3s ease;
 }
 
 .btn-enviar {
