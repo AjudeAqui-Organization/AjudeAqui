@@ -117,14 +117,19 @@ main .hero{
 /* Etiquetas */
 
 
-/* Container com 2 linhas e 3 colunas */
-.card_servicos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  justify-items: center;
-  padding: 20px 40px;
+/* Container com 2 linhas e 3 colunas  */
+.three-primary-cards , .three-second-cards {
+  display: flex;
+   grid-template-columns: repeat(3, 1fr); 
+   gap: 32px; 
+   justify-items: center; 
+   padding: 20px 200px;
+  justify-content: space-around;
+  
 }
+
+
+
 
 /* Card individual */
 .card-service {
@@ -292,13 +297,14 @@ main .hero{
 
 
 
-.Services {
+.Funcionalidades {
   display: grid;
+  flex-direction: column;
+  justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
   justify-items: center;
-  padding: 20px 40px;
-  margin: 0 auto;
+  padding: 50px 350px;
 }
 
 /* Card individual */
@@ -315,6 +321,14 @@ main .hero{
   text-align: center;
   font-family: 'Poppins', sans-serif;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.column-one{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .card-life:hover {
