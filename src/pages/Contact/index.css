@@ -133,6 +133,10 @@ main.contact-page {
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
   margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .card-button:hover {
@@ -140,6 +144,16 @@ main.contact-page {
   color: #ffffff;
   box-shadow: 0 14px 28px rgba(70, 122, 238, 0.28);
   transform: translateY(-2px);
+}
+
+.card-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(70, 122, 238, 0.28);
+}
+
+.btn-telefone.is-copied {
+  background-color: #467aee;
+  color: #ffffff;
 }
 
 .card-emergency {
@@ -503,48 +517,6 @@ main.contact-page {
   font-size: 14px;
   color: #64748b;
   line-height: 1.6;
-}
-
-/* Popup de Copiar */
-.popup-copiar {
-  display: none;
-  position: fixed;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.18);
-  padding: 16px;
-  z-index: 1000;
-  min-width: 220px;
-  text-align: center;
-}
-
-.popup-copiar p {
-  margin: 0 0 12px 0;
-  font-size: 15px;
-  font-weight: 600;
-  color: #0f172a;
-}
-
-.btn-copiar-popup {
-  width: 100%;
-  padding: 10px 16px;
-  background-color: #2065ff;
-  color: #ffffff;
-  border: none;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.btn-copiar-popup:hover {
-  background-color: #1a4db8;
-}
-
-.btn-copiar-popup:active {
-  transform: scale(0.98);
 }
 
 /* Footer - Ficar acima do background */

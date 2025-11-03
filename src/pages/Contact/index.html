@@ -62,9 +62,9 @@
                         </div>
                         <h3>WhatsApp</h3>
                         <p>Resposta rápida pelo WhatsApp</p>
-                        <button class="card-button btn-whatsapp" onclick="abrirPopupCopiar('(11) 99999-9999', this)">
+                        <a class="card-button btn-whatsapp" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank" rel="noopener noreferrer">
                             (11) 99999-9999
-                        </button>
+                        </a>
                     </article>
 
                     <article class="contact-card card-telefone">
@@ -73,7 +73,7 @@
                         </div>
                         <h3>Telefone</h3>
                         <p>Atendimento de segunda a sábado, das 08h às 18h</p>
-                        <button class="card-button btn-telefone" onclick="abrirPopupCopiar('(11) 3333-3333', this)">
+                        <button type="button" class="card-button btn-telefone" data-copy="(11) 3333-3333">
                             (11) 3333-3333
                         </button>
                     </article>
@@ -84,9 +84,9 @@
                         </div>
                         <h3>E-mail</h3>
                         <p>Retorno do especialista em até 2 horas úteis</p>
-                        <button class="card-button btn-email" onclick="abrirPopupCopiar('contato@ajudeaqui.com', this)">
+                        <a class="card-button btn-email" href="mailto:contato@ajudeaqui.com">
                             contato@ajudeaqui.com
-                        </button>
+                        </a>
                     </article>
 
                     <article class="contact-card card-emergency">
@@ -95,9 +95,9 @@
                         </div>
                         <h3>Emergência 24h</h3>
                         <p>Atendimento imediato para urgências</p>
-                        <button class="card-button btn-emergencia" onclick="abrirPopupCopiar('(11) 98765-4321', this)">
+                        <a class="card-button btn-emergencia" href="tel:+5511987654321">
                             (11) 98765-4321
-                        </button>
+                        </a>
                     </article>
                 </div>
             </div>
@@ -252,10 +252,6 @@
             </div>
         </section>
 
-        <div class="popup-copiar" id="popupCopiar">
-            <p id="textoCopiar"></p>
-            <button class="btn-copiar-popup" onclick="copiarConteudo()">Copiar</button>
-        </div>
     </main>
 
     <!-- FOOTER NO FUNDO -->
