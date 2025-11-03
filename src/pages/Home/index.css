@@ -23,7 +23,7 @@ body {
 .slogan{
      
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     margin-bottom: 20px;
     justify-content: start;
