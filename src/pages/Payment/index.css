@@ -366,24 +366,93 @@ button:hover {
     color: #2563EB;
 }
 
-
-
-
 .order-summary {
     position: absolute;
     top: 325px;
     right: 170px;
     width: 420px;
-    background: #000000;
+    height: 484px;
+    background: #ffffff;
     border-radius: 20px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
     padding: 20px;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 14px;  /* texto padrão */
     font-weight: 400;
     color: #000000;
-
 }
-.order-summary * {
-    font-size: 13px !important;
+
+/* Título */
+.order-summary h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2563EB;
+    
+}
+
+/* Itens padrão */
+.order-summary .item span,
+.order-summary .subtotal span,
+.order-summary .taxa span,
+.order-summary .total span {
+    font-size: 14px;
+    color: #868686;
+}
+
+/* Nome dos serviços */
+.order-summary .item span:first-child {
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Preços dos serviços (R$...) */
+.order-summary .item span:last-child {
+    color: #2563EB;
+    font-weight: 600;
+}
+
+/* Subtotal */
+.order-summary .subtotal span:last-child {
+    color: #2563EB;
+    font-weight: 600;
+    
+    
+}
+
+/* Taxa de locomoção (Grátis) */
+.order-summary .taxa span:last-child {
+    
+    color: #2563EB;
+    font-weight: 600;
+}
+
+/* Total final */
+.order-summary .total span:last-child {
+    color: #2563EB;
+    font-weight: 600;
+}
+
+/* Rótulo "TOTAL" */
+.order-summary .total span:first-child {
+    color: #000000;
+    font-weight: 700;
+}
+
+/* Preços dos serviços e subtotal (pretos) */
+.order-summary .item span:last-child,
+.order-summary .subtotal span:last-child {
+    color: #000000;
+    font-weight: 600;
+}
+
+/* "Grátis" azul */
+.order-summary .taxa span:last-child {
+    color: #2563EB;
+    font-weight: 600;
+}
+
+/* Valor final (R$290,90) azul */
+.order-summary .total span:last-child {
+    color: #2563EB;
+    font-weight: 700;
 }
