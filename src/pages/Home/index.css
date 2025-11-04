@@ -38,7 +38,7 @@ main .hero {
   height: 100vh;
 }
 
-.slogan > .text {
+.text {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -46,7 +46,7 @@ main .hero {
   margin-left: 45px;
 }
 
-.slogan > .text > span {
+.text > span {
   font-size: 32px;
   font-weight: bold;
   color: #000000;
@@ -56,11 +56,11 @@ main .hero {
   margin-top: 100px;
 }
 
-.slogan > .text > .sspan {
+.sspan {
   color: #2563eb;
 }
 
-.slogan > .text > p {
+.text > p {
   color: #656565;
   font-size: 15px;
   font-weight: 600;
@@ -272,7 +272,7 @@ main .hero {
   font-weight: 600;
 }
 
-.Services {
+.Funcionalidades {
   display: grid;
   flex-direction: column;
   justify-content: center;
@@ -302,6 +302,7 @@ main .hero {
 .column-one {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .card-life:hover {
@@ -353,7 +354,7 @@ main .hero {
   margin: 0 0 16px 0;
 }
 
-.solicitar-arc button {
+.solicitar-arc button  {
   margin-top: 85px;
   margin-bottom: 90px;
   border-radius: 20px;
@@ -362,11 +363,6 @@ main .hero {
   padding-bottom: 20px;
   padding-left: 40px;
   padding-right: 40px;
-}
-
-.solicitar-arc button img {
-  width: 25px;
-  height: 28px;
 }
 
 .como-funciona {
@@ -383,18 +379,32 @@ main .hero {
   justify-content: center;
 }
 
+.solicitar:hover {
+  background-color: white;
+  border: solid #1e40af 1px;
+  color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.como-funciona:hover {
+  background-color: #2563eb;
+  border: solid #2563eb 1px;
+  color:white;
+  transform: translateY(-2px);
+}
+
 .solicitar-arc h3 {
   font-size: 40px;
-  font-weight:600;
-  
+  font-weight: 600;
+  text-align: center;
 }
 
-.solicitar-arc{
+.button-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-
+  gap: 20px;
 }
 
-
+.solicitar > img {
+  margin-left: 10px;
+}
