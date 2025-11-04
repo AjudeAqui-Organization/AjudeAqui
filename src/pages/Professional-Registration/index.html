@@ -43,17 +43,17 @@
             <div class="form-group-inline">
               <div class="form-group">
                 <label for="nome">Nome Completo *</label>
-                <input type="text" id="nome" name="nome" required />
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo" />
               </div>
             </div>
             <div class="form-group-inline">
               <div class="form-group">
                 <label for="cpf">CPF *</label>
-                <input type="text" id="cpf" name="cpf" required />
+                <input type="text" id="cpf" name="cpf" required placeholder="Digite seu CPF (somente números)" />
               </div>
               <div class="form-group">
                 <label for="rg">RG *</label>
-                <input type="text" id="rg" name="rg" required />
+                <input type="text" id="rg" name="rg" required placeholder="Digite seu RG" />
               </div>
             </div>
             <div class="form-group-inline">
@@ -82,7 +82,7 @@
                   type="date"
                   id="data-nascimento"
                   name="data-nascimento"
-                  required
+                  required placeholder="Selecione sua data de nascimento"
                 />
               </div>
             </div>
@@ -357,6 +357,91 @@
     <textarea id="referencias" name="referencias"></textarea>
   </div>
           </fieldset>
+          <fieldset>
+  <legend>
+    <img
+      src="../../assets/Icons/escudo.svg"
+      alt="Ícone Dados de Acesso"
+      class="icon"
+    />
+    Dados de Acesso
+  </legend>
+  <div class="form-group-inline">
+    <div class="form-group">
+      <label for="senha">Senha *</label>
+      <input
+        type="password"
+        id="senha"
+        name="senha"
+        minlength="6"
+        required
+        placeholder="Mínimo 6 caracteres, incluindo letras e números"
+      />
+    </div>
+    <div class="form-group">
+      <label for="confirmar-senha">Confirmar Senha *</label>
+      <input
+        type="password"
+        id="confirmar-senha"
+        name="confirmar-senha"
+        minlength="6"
+        required
+        placeholder="Confirme sua senha"
+      />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="certificacoes-cursos">Certificações e Cursos</label>
+    <textarea
+      id="certificacoes-cursos"
+      name="certificacoes-cursos"
+      placeholder="Descreva suas certificações, cursos e qualificações"
+    ></textarea>
+  </div>
+          </fieldset>
+          <fieldset>
+  <legend>
+    <img
+      src="../../assets/Icons/termos.svg"
+      alt="Ícone Termos e Condições"
+      class="icon"
+    />
+    Termos e Condições
+  </legend>
+  <div class="terms-checkbox-group">
+    <label>
+      <input type="checkbox" name="termos" required />
+      Li e aceito os <a href="#">Termos de Prestação de Serviço</a> e a <a href="#">Política de Privacidade</a> *
+    </label>
+    <label>
+      <input type="checkbox" name="codigo-conduta" required />
+      Concordo em seguir o <a href="#">Código de Conduta Profissional</a> *
+    </label>
+    <label>
+      <input type="checkbox" name="verificacao" required />
+      Autorizo a verificação de antecedentes e referências profissionais *
+    </label>
+    <label>
+      <input type="checkbox" name="notificacoes" />
+      Aceito receber notificações sobre novas oportunidades de trabalho
+    </label>
+  </div>
+          </fieldset>
+
+<div class="form-actions">
+  <button type="button" class="btn-voltar">Voltar</button>
+  <button type="submit" class="btn-enviar">Enviar Cadastro</button>
+</div>
+
+<section class="proximos-passos">
+  <h3>Próximos Passos</h3>
+  <ul>
+    <li>Análise do cadastro pela nossa equipe</li>
+    <li>Verificação de documentos e referências</li>
+    <li>Entrevista por videochamada</li>
+    <li>Aprovação e início dos trabalhos</li>
+  </ul>
+</section>
         </form>
       </section>
     </main>
