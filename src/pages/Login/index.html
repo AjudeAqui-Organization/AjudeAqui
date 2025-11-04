@@ -1,18 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - AjudeAqui</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section>
-        <div class="login-container">
-             <h3>Faça seu Login</h3>
-        </div>
-    </section>
+  <div class="container">
+    <div class="login-box">
+      <div class="logo-side">
+        <img src="../../assets/images/logo-3d-gif.gif" alt="AjudeAqui Logo" class="logo">
+        <h1>AjudeAqui</h1>
+      </div>
 
-    <img src="../../assets/images/logo-3d-Sem_Fundo.png" alt="Login Image" class="login-image">
+      <div class="form-side">
+        <h2>Faça seu Login</h2>
+
+        <form>
+        
+          <div class="input-group">
+            <div class="input-name">
+            <label for="email">E-mail</label>
+            </div>
+            <img src="../../assets/Icons/pessoa-preta.svg" alt="Person icon" class="input-icon">
+            <input type="email" id="email" placeholder="Digite seu e-mail">
+          </div>
+
+          <div class="input-group">
+            <div class="input-address">
+            <label for="senha">Senha</label>
+            <a href="">Esqueci minha senha</a>
+            </div>
+            <img src="../../assets/Icons/cadeado-preto.svg" alt="Lock icon" class="input-icon">
+            <input type="password" id="senha" placeholder ="Digite sua senha">
+          </div>
+
+          <button type="submit" class="btn">Entrar</button>
+        </form>
+        <div class="divider">
+          <span>Ou faça login com</span>
+        </div>
+        <button class="google-btn">
+          <img src="../../assets/Icons/google-icon.svg" alt="Google logo">
+          Login com<strong>google</strong>
+        </button>
+
+        <p class="signup-text">
+          Não tem uma conta?
+          <a href="#" class="signup-link">Cadastre-se</a>
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
