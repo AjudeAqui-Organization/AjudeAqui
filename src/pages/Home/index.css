@@ -1,129 +1,117 @@
 body {
-    margin: 0;
-    padding: 0; 
-    font-family: 'Poppins', sans-serif;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;       
-    background-attachment: fixed;
-    
-    
-  }
-
-  
-  main {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(/src/assets/images/img-hero-fundo.png); 
-  
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-
-.slogan{
-     
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-bottom: 250px;
-    justify-content: start;
-    border-radius: 20px;
-    align-self: center;
-    background-color: white;
-    
-  
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../../assets/images/gif-jardim.gif");
 }
 
+.slogan {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 250px;
+  justify-content: start;
+  border-radius: 20px;
+  align-self: center;
+  background-color: white;
+}
 
-main .hero{
+main .hero {
   position: absolute;
-    top: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.slogan > .text{
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 60px;
-    margin-left: 45px;
-
+.slogan > .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 60px;
+  margin-left: 45px;
 }
 
-.slogan > .text > span{
-    font-size: 32px;
-    font-weight: bold;
-    color: #000000;
+.slogan > .text > span {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000000;
 }
 
-.pspan{
+.pspan {
   margin-top: 100px;
 }
 
-.slogan > .text > .sspan{
-    color: #2563EB;
+.slogan > .text > .sspan {
+  color: #2563eb;
 }
 
-.slogan > .text > p{
-    color: #656565;
-    font-size: 15px;
-    font-weight:600;
-    
+.slogan > .text > p {
+  color: #656565;
+  font-size: 15px;
+  font-weight: 600;
 }
 
-.logo-slogan{
-    width: 300px;
-    height: auto;
-    display: flex;
-    margin-left: 20px;
-    justify-content: center;
-    align-items: end;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    margin-right: 60px;
+.logo-slogan {
+  width: 300px;
+  height: auto;
+  display: flex;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: end;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  margin-right: 60px;
 }
 
-.btn-slogan{
-    background-color: #ffffff;
-    border: solid black 2px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #000000;
-    cursor: pointer;
-    width: fit-content;
-    margin-top: 10px;
+.btn-slogan {
+  background-color: #ffffff;
+  border: solid black 2px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 10px;
 }
 
-.btn-slogan a{
-    text-decoration: none;
-    color: #000000;
+.btn-slogan a {
+  text-decoration: none;
+  color: #000000;
 }
-.btn-slogan:hover{
-    background-color: #2563EB;
-    border: solid #2563EB 2px;
-    color: #ffffff;
+.btn-slogan:hover {
+  background-color: #2563eb;
+  border: solid #2563eb 2px;
+  color: #ffffff;
 }
-
 
 /* Etiquetas */
 
-
-/* Container com 2 linhas e 3 colunas */
-.card_servicos {
-  display: grid;
+/* Container com 2 linhas e 3 colunas  */
+.three-primary-cards,
+.three-second-cards {
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   justify-items: center;
-  padding: 20px 40px;
+  padding: 20px 200px;
+  justify-content: space-around;
 }
 
 /* Card individual */
@@ -137,7 +125,7 @@ main .hero{
   align-items: center;
   padding: 24px 18px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -150,7 +138,7 @@ main .hero{
 .image-flor {
   width: 56px;
   height: 56px;
-  background-color: #2563EB;
+  background-color: #2563eb;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -200,7 +188,7 @@ main .hero{
 
 /* Link Saiba Mais */
 .saiba-mais {
-  color: #2563EB;
+  color: #2563eb;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.85rem;
@@ -218,8 +206,6 @@ main .hero{
   height: auto;
 }
 
-
-
 .title-service {
   margin-top: 50px;
   display: block;
@@ -228,7 +214,7 @@ main .hero{
   color: #111;
   text-align: center;
   margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .subtitle-service {
@@ -238,17 +224,16 @@ main .hero{
   color: #656565;
   text-align: center;
   margin-bottom: 80px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 .icon {
   width: 40px;
   height: 40px;
-  background-color: #06A86A;
+  background-color: #06a86a;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -267,11 +252,10 @@ main .hero{
   align-items: center;
   padding: 24px 18px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
-.title-funcionalidades{
+.title-funcionalidades {
   font-size: 40px;
   color: black;
   display: flex;
@@ -279,23 +263,23 @@ main .hero{
   margin-top: 145px;
   margin-bottom: 20px;
   font-weight: 600;
-  
+  text-align: center;
 }
 .text-funcionalidade {
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 600;
-
 }
 
 .Services {
   display: grid;
+  flex-direction: column;
+  justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
   justify-items: center;
-  padding: 20px 40px;
-  margin: 0 auto;
+  padding: 50px 350px;
 }
 
 /* Card individual */
@@ -310,8 +294,14 @@ main .hero{
   align-items: center;
   padding: 28px 20px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.column-one {
+  display: flex;
+  flex-direction: column;
 }
 
 .card-life:hover {
@@ -323,7 +313,7 @@ main .hero{
 .coracao {
   width: 56px;
   height: 56px;
-  background-color: #2563EB;
+  background-color: #2563eb;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -363,43 +353,48 @@ main .hero{
   margin: 0 0 16px 0;
 }
 
-.solicitar-arc button{
+.solicitar-arc button {
   margin-top: 85px;
   margin-bottom: 90px;
   border-radius: 20px;
   font-size: 20px;
   padding-top: 20px;
-  padding-bottom: 20px ;
+  padding-bottom: 20px;
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.solicitar-arc button img{
+.solicitar-arc button img {
   width: 25px;
   height: 28px;
 }
 
 .como-funciona {
-  border: solid #2563EB 1px;
+  border: solid #2563eb 1px;
   background-color: white;
-  color: #2563EB;  
-  
+  color: #2563eb;
 }
 
-.solicitar{
-  background-color: #2563EB;
-  border: solid #2563EB 1px;
+.solicitar {
+  background-color: #2563eb;
+  border: solid #2563eb 1px;
   color: white;
-  
   display: flex;
   justify-content: center;
 }
 
-.solicitar-arc h3{
+.solicitar-arc h3 {
   font-size: 40px;
   font-weight:600;
   
 }
+
 .solicitar-arc{
-  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
+
+
