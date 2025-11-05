@@ -1,0 +1,70 @@
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../../assets/images/gif-jardim.gif");
+  background-size: cover;
+}
+
+.btn-service > button {
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: white;
+    gap: 13px;
+
+
+}
+.service-card{
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    
+}
+
+.jardim-dos-sonhos{
+    background-image: url("../../assets/images/gif-jardim.gif");
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+}
+
+.jardim-dos-sonhos>h3{
+    
+    color: white;
+    font-size: 20px;
+    display: flex;;
+    justify-content: center;
+}
+.title-service {
+    font-size: 24px;
+}
+
+.subtitle-service {
+    font-size: 16px;
+    text-align: start;
+}
+.function-service{
+    font-size: 16px;
+}
+
+.btn-solicitar{
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 9px 9px 10px 10px;
+    background-color: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btn-solicitar:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}

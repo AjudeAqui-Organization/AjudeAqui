@@ -7,7 +7,7 @@
 .footer {
     background-color: #1a1a1a;
     color: #ffffff;
-    padding: 40px 0 30px;
+    padding: 40px 0 148px;
     font-family: "Poppins", sans-serif;
     position: relative;
     width: 100%;
@@ -201,7 +201,7 @@
 
 .footer-divider {
     height: 1px;
-    background: #333333;
+    background: #ffffff;
     margin: 20px 0;
 }
 
