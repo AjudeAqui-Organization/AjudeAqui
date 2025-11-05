@@ -46,7 +46,7 @@ main .hero {
   margin-left: 45px;
 }
 
-.text > span {
+.text>span {
   font-size: 32px;
   font-weight: bold;
   color: #000000;
@@ -60,7 +60,7 @@ main .hero {
   color: #2563eb;
 }
 
-.text > p {
+.text>p {
   color: #656565;
   font-size: 15px;
   font-weight: 600;
@@ -95,6 +95,7 @@ main .hero {
   text-decoration: none;
   color: #000000;
 }
+
 .btn-slogan:hover {
   background-color: #2563eb;
   border: solid #2563eb 2px;
@@ -255,6 +256,7 @@ main .hero {
   font-family: "Poppins", sans-serif;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .title-funcionalidades {
   font-size: 40px;
   color: black;
@@ -265,6 +267,7 @@ main .hero {
   font-weight: 600;
   text-align: center;
 }
+
 .text-funcionalidade {
   display: flex;
   margin-top: 10px;
@@ -354,7 +357,7 @@ main .hero {
   margin: 0 0 16px 0;
 }
 
-.solicitar-arc button  {
+.solicitar-arc button {
   margin-top: 85px;
   margin-bottom: 90px;
   border-radius: 20px;
@@ -389,7 +392,7 @@ main .hero {
 .como-funciona:hover {
   background-color: #2563eb;
   border: solid #2563eb 1px;
-  color:white;
+  color: white;
   transform: translateY(-2px);
 }
 
@@ -405,6 +408,6 @@ main .hero {
   gap: 20px;
 }
 
-.solicitar > img {
+.solicitar>img {
   margin-left: 10px;
 }
