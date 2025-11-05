@@ -22,6 +22,14 @@
     will-change: transform;
 }
 
+.page-contact .header {
+    position: absolute;
+}
+
+.page-contact .header.header--scrolled {
+    position: fixed;
+}
+
 .header--hidden {
     transform: translateY(-160px);
 }
