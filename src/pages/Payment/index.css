@@ -278,7 +278,7 @@ button:hover {
     position: relative;
     top: 3px;
     /* ajuste fino */
-    transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
+    transition: transform 1s, box-shadow 0.2s, color 0.2s;
 }
 
 /* Quadrado customizado dos radio buttons */
@@ -293,7 +293,7 @@ button:hover {
     background: #fff;
     position: relative;
     top: 3px;
-    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    transition: background 1s, transform 0.2s, box-shadow 0.2s;
 }
 
 /* Hover: quadrado azul preenchido e label inteiro sobe */
@@ -333,7 +333,7 @@ button:hover {
     width: 485px;
     height: 102px;
     font-size: 10px;
-    font-weight: 400;
+    font-weight: 20;
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(32, 20, 255, 0.27),
@@ -354,6 +354,7 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 8px;
+    font-size: 11px;
 }
 
 .terms-box input[type="checkbox"] {
@@ -374,27 +375,107 @@ button:hover {
     height: 484px;
     background: #ffffff;
     border-radius: 20px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
-    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;  /* texto padrão */
+    font-size: 14px;
+    /* texto padrão */
     font-weight: 400;
     color: #000000;
 }
 
-/* Título */
+/* Título principal */
 .order-summary h2 {
     font-size: 18px;
     font-weight: 600;
     color: #2563EB;
-    
+    text-align: center;
+    /* agora alinhado à esquerda */
+    margin-bottom: 40px;
+
+
 }
 
-/* Itens padrão */
-.order-summary .item span,
-.order-summary .subtotal span,
-.order-summary .taxa span,
-.order-summary .total span {
+/* Estrutura geral de cada linha
+.order-summary .item2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* nome à esquerda, valor à direita */
+    /* margin-bottom: 90px }*/
+
+.order-summary .subtotal, .order-summary .taxa, .order-summary .total {
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #E0E0E0;
+    padding: 0px 0;
+    
+} 
+
+.item-wrapper {
+    margin-top: 10px;
+}
+
+.order-summary .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* nome à esquerda, valor à direita */
+    margin-bottom: 15px;
+}
+
+.initial-itens {
+margin-bottom: 67px;
+}
+
+.order-summary .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* nome à esquerda, valor à direita */
+    border-top: 2px solid #E0E0E0;
+    padding-top: px;
+
+}
+
+.order-summary .taxa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* nome à esquerda, valor à direita */
+    border-top: 2px solid #E0E0E0;  
+}
+
+.item-wrapper {
+
+}
+
+
+
+
+
+/* Define uma largura fixa para os títulos (esquerda) */
+.order-summary .item span:first-child,
+.order-summary .subtotal span:first-child,
+.order-summary .taxa span:first-child,
+.order-summary .total span:first-child {
+    width: 220px;
+    /* largura fixa da coluna de títulos */
+    text-align: left;
+}
+
+/* Define a largura da coluna de valores (direita) */
+.order-summary .item span:last-child,
+.order-summary .subtotal span:last-child,
+.order-summary .taxa span:last-child,
+.order-summary .total span:last-child {
+    flex: 1;
+    text-align: right;
+}
+
+/* Estilos visuais */
+.order-summary span {
     font-size: 14px;
     color: #868686;
 }
@@ -405,54 +486,55 @@ button:hover {
     font-weight: 600;
 }
 
-/* Preços dos serviços (R$...) */
-.order-summary .item span:last-child {
-    color: #2563EB;
+/* Nome subtotais */
+
+.order-summary .subtotal span:first-child {
+    color: #868686;
     font-weight: 600;
 }
 
-/* Subtotal */
-.order-summary .subtotal span:last-child {
-    color: #2563EB;
-    font-weight: 600;
-    
-    
-}
-
-/* Taxa de locomoção (Grátis) */
-.order-summary .taxa span:last-child {
-    
-    color: #2563EB;
-    font-weight: 600;
-}
-
-/* Total final */
-.order-summary .total span:last-child {
-    color: #2563EB;
-    font-weight: 600;
-}
-
-/* Rótulo "TOTAL" */
-.order-summary .total span:first-child {
-    color: #000000;
-    font-weight: 700;
-}
-
-/* Preços dos serviços e subtotal (pretos) */
+/* Valores padrão */
 .order-summary .item span:last-child,
 .order-summary .subtotal span:last-child {
     color: #000000;
     font-weight: 600;
+    
 }
 
-/* "Grátis" azul */
+/* Taxa de locomoção (Grátis) */
+.order-summary .taxa span:first-child {
+    color: #868686;
+    font-weight: 600;
+     margin-top: 25px;
+}
+
 .order-summary .taxa span:last-child {
+    color: #2563EB;
+    font-weight: 600;
+     margin-top: 25px;
+}
+
+/* Total final */
+.order-summary .total {
+    margin-top: 25px;
+}
+
+.order-summary .total span:first-child {
+    color: #000000;
+    font-weight: 600;
+}
+
+.order-summary .total span:last-child {
     color: #2563EB;
     font-weight: 600;
 }
 
-/* Valor final (R$290,90) azul */
-.order-summary .total span:last-child {
-    color: #2563EB;
-    font-weight: 700;
+.order-summary .secure span:last-child{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
 }
