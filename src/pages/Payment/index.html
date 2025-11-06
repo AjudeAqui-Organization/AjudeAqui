@@ -28,10 +28,10 @@
                                 placeholder="Validade (MM/AA)" required> </div>
                         <div class="input-group"> <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
                         </div>
-
-                    </div> <input type="text" id="installments" name="installments" placeholder="Parcelamento" required>
+                    </div> 
+                    <input type="text" id="installments" name="installments" placeholder="Parcelamento" required>
                 </div>
-                <!-- Inner box para métodos de pagamento -->
+                
                 <div class="inner-box">
                     <label>Método de Pagamentos</label>
                     <div class="payment-methods">
@@ -54,7 +54,6 @@
                     </div>
                 </div>
 
-                <!-- Termos e Condições: -->
                 <div class="terms-box">
                     <label><input type="checkbox"> Li e aceito os <a href="#">Termos de Uso</a> e a <a href="#">Política
                             de Privacidade</a></label>
@@ -63,56 +62,49 @@
                     <button type="submit">Concluir Pagamento </button>
                 </div>
 
+                <div class="order-summary">
+                    <h2>Resumo do pedido</h2>
 
+                    <div class="initial-itens">
+                        <div class="item">
+                            <span>Serviço de Jardinagem</span>
+                            <span>R$190,90</span>
+                        </div>
 
+                        <div class="item item2">
+                            <span>Serviço de Limpeza</span>
+                            <span>R$100,00</span>
+                        </div>
+                    </div>
 
+                    <div class="item-wrapper">
+                        <div class="subtotal">
+                            <span>Subtotal</span>
+                            <span>R$290,90</span>
+                        </div>
+
+                        <div class="taxa">
+                            <span>Taxa de locomoção</span>
+                            <span>Grátis</span>
+                        </div>
+
+                        <div class="total">
+                            <span>TOTAL</span>
+                            <span>R$290,90</span>
+                        </div>
+                    </div>
+
+                    <div class="secure">
+                        <img src="/src/assets/Icons/cadeado-verde.svg" alt="cadeado">
+                        <span>Pagamento seguro</span>
+                    </div>
+                </div>
             </form>
 
-            <!-- Resumo do Pedido -->
-            <div class="order-summary">
-                <h2>Resumo do pedido</h2>
-
-                <div class="initial-itens">
-                <div class="item">
-                    <span>Serviço de Jardinagem</span>
-                    <span>R$190,90</span>
-                </div>
-
-                <div class="item item2">
-                    <span>Serviço de Limpeza</span>
-                    <span>R$100,00</span>
-                </div>
-                </div>
-
-                <div class="item-wrapper">
-                <div class="subtotal">
-                    <span>Subtotal</span>
-                    <span>R$290,90</span>
-                </div>
-
-                <div class="taxa">
-                    <span>Taxa de locomoção</span>
-                    <span>Grátis</span>
-                </div>
-
-                <div class="total">
-                    <span>TOTAL</span>
-                    <span>R$290,90</span>
-                </div>
-                </div>
-
-                <div class="secure">
-                    <img src="/src/assets/Icons/cadeado-verde.svg" alt="cadeado">
-                    <span>Pagamento seguro</span>
-                </div>
+            <div class="card">
+                <img src="/AjudeAqui-1/src/assets/images/card blur.png" alt="">
+                <img src="/AjudeAqui-1/src/assets/images/triangle.png" alt="">
             </div>
-        </section>
-
-        </div>
-
-
-        </form>
-
         </section>
     </main>
 </body>

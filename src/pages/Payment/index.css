@@ -6,11 +6,14 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
+    background: linear-gradient(0deg, rgba(37, 99, 235, 0.8) -10%, rgba(255, 255, 255, 0) 100%);
 }
 
 header {
     position: relative;
+    width: 100%;
+    height: 172px;
+    background-color: #2563EB;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,22 +22,10 @@ header {
 .header-icon {
     position: absolute;
     right: 940px;
-    /* ajusta pra mais ou menos direita */
     top: 50%;
     transform: translateY(-50%);
     width: 150px;
-    /* opcional */
     height: auto;
-}
-
-header {
-    width: 100%;
-    height: 172px;
-    background-color: #2563EB;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .header-content {
@@ -47,9 +38,7 @@ header {
     max-width: 800px;
 }
 
-/* Título da header*/
 span:first-of-type {
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 32px;
     color: #FFFFFF;
@@ -57,11 +46,9 @@ span:first-of-type {
     text-align: center;
 }
 
-/* Sub-título da header*/
 span:last-of-type {
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 20;
+    font-size: 20px;
     color: #C1C1C1;
     width: 100%;
     text-align: center;
@@ -78,8 +65,6 @@ section {
     justify-content: flex-start;
     min-height: calc(100vh - 80px);
     text-align: left;
-    font-family: 'Poppins', sans-serif;
-
 }
 
 form {
@@ -94,9 +79,6 @@ form {
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
-
-
-
 }
 
 .form-group {
@@ -105,31 +87,18 @@ form {
     flex-direction: column;
     align-items: flex-start;
     gap: 11px;
-
 }
 
 .date-cvv-container {
     display: flex;
     justify-content: space-between;
-    /* empurra os campos para as extremidades */
-    gap: 40px;
-    /* aumenta o espaço entre eles */
-    width: 100%;
-}
-
-.date-cvv-container {
-    display: flex;
-    justify-content: space-between;
-    /* empurra os campos para as extremidades */
     gap: 30px;
-    /* aumenta o espaço entre eles */
     width: 100%;
 }
 
 .date-cvv-container .input-group:first-child {
     flex: 2;
     width: 320px;
-    /* data de validade maior */
 }
 
 .date-cvv-container .input-group:last-child {
@@ -146,7 +115,6 @@ form {
 label {
     text-align: left;
     margin-bottom: 3px;
-    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     color: #333333;
 }
@@ -161,27 +129,21 @@ label[for="infocliente"] {
     color: #000000;
 }
 
-/* inputs com fundo branco e placeholder como texto */
 input {
     width: 100%;
     height: 44px;
     padding: 8px;
     margin: 0px 0;
-    font-family: 'Poppins', sans-serif;
     font-size: 12px;
     border: 2px solid #2563EB;
     border-radius: 6px;
     background: #ffffff;
-    /* garante sem preenchimento colorido */
     color: #000000;
-    /* cor do texto digitado */
 }
 
-/* estilo opcional do placeholder (mantém só texto cinza, sem fundo) */
 input::placeholder {
     color: #656565;
     opacity: 1;
-
 }
 
 input:focus {
@@ -189,7 +151,6 @@ input:focus {
     border-color: #2563EB;
 }
 
-/* borda específica para parcelamento */
 #installments {
     border-color: #656565;
 }
@@ -206,7 +167,6 @@ button {
     border: none;
     cursor: pointer;
     font-weight: 500;
-    font-family: 'Poppins', sans-serif;
     font-size: 13px;
     border-radius: 20px;
 }
@@ -215,16 +175,12 @@ button:hover {
     background-color: #1D4ED8;
 }
 
-/*Começo da métodos de pagamento */
-/* Inner box para métodos de pagamento */
 .inner-box {
     width: 485px;
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0px 4px 4px rgba(32, 20, 255, 0.33),
-        /* sombra embaixo (azul) */
-        0 -4px 20px rgba(0, 0, 0, 0.17);
-    /* sombra em cima (azul) */
+                0 -4px 20px rgba(0, 0, 0, 0.17);
     padding: 16px;
     height: 90px;
     margin-top: 45px;
@@ -233,22 +189,16 @@ button:hover {
     gap: 10px;
 }
 
-/* Centraliza o título dentro da inner-box */
 .inner-box label {
     display: block;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     color: #000000;
     position: relative;
     top: 3px;
-    /* ajuste o valor negativo para subir mais */
 }
 
-
-/* Layout dos métodos de pagamento */
-/* Container geral — mantém todos os labels lado a lado */
 .payment-methods {
     display: flex;
     justify-content: center;
@@ -258,7 +208,6 @@ button:hover {
     white-space: nowrap;
 }
 
-/* Cada label — quadrado + texto lado a lado */
 .payment-methods label {
     display: inline-flex;
     align-items: center;
@@ -269,18 +218,15 @@ button:hover {
     top: -10px;
 }
 
-/* Texto ao lado do quadrado */
 .payment-methods label span {
     display: inline-block;
     color: #000000;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 11px;
     line-height: 1;
     margin-top: 1px;
 }
 
-/* Quadrado customizado */
 .payment-methods input[type="checkbox"] {
     width: 10px;
     height: 8px;
@@ -297,21 +243,16 @@ button:hover {
     vertical-align: middle;
 }
 
-/* Hover: quadrado azul preenchido e label inteiro sobe */
 .payment-methods label:hover {
     transform: translateY(-6px);
-    /* sobe label + quadrado */
     color: #000;
-    /* mantém texto preto */
 }
 
 .payment-methods input[type="checkbox"]:checked {
     background: #2563EB;
     border-color: #000;
-    /* borda preta sempre */
 }
 
-/* Caixa de termos */
 .terms-box {
     width: 485px;
     height: 102px;
@@ -319,16 +260,12 @@ button:hover {
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(32, 20, 255, 0.27),
-        /* sombra embaixo (azul) */
-        0 -4px 20px rgba(0, 0, 0, 0.15);
-    /* sombra em cima (azul) */
-
+                0 -4px 20px rgba(0, 0, 0, 0.15);
     padding: 18px 24px;
     margin-top: 34px;
     display: flex;
     flex-direction: column;
     gap: -10px;
-    font-family: 'Poppins', sans-serif;
     color: #000;
 }
 
@@ -337,41 +274,35 @@ button:hover {
     align-items: center;
     gap: 8px;
     font-size: 11px;
-      font-weight: 500;
+    font-weight: 600;
 }
 
 .terms-box input[type="checkbox"] {
     width: 10px;
     height: 10px;
-    accent-color: #2563EB;
-     
+    accent-color: #000e2c;
 }
 
 .terms-box a {
     color: #2563EB;
-     
 }
 
 .order-summary {
     position: absolute;
-    top: 325px;
-    right: 170px;
+    top: 107px;
+    right: 49px;
     width: 420px;
-    margin-top: 10px;
     height: 484px;
     background: #ffffff;
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
     padding: 20px 30px;
-    font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    /* texto padrão */
     font-weight: 500;
-    
     color: #000000;
+    z-index: 4;
 }
 
-/* Título principal */
 .order-summary h2 {
     font-size: 18px;
     font-weight: 600;
@@ -379,125 +310,68 @@ button:hover {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;
-
-
 }
 
-/* Estrutura geral de cada linha
-.order-summary .item2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* nome à esquerda, valor à direita */
-    /* margin-bottom: 90px }*/
-
-.order-summary .subtotal, .order-summary .taxa, .order-summary .total {
-    display: flex;  
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 0;
-    
-} 
-
-.item-wrapper {
-    margin-top: 10px;
+.order-summary .initial-itens {
+    margin-bottom: 67px;
 }
 
 .order-summary .item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* nome à esquerda, valor à direita */
-    margin-bottom: 15px;
-}
-
-.initial-itens {
-margin-bottom: 67px;
-}
-
-.order-summary .total {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* nome à esquerda, valor à direita */
-
-   
-
-}
-
-.order-summary .taxa {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* nome à esquerda, valor à direita */
-     
-}
-
-.item-wrapper {
-
+    gap: 12px;
+    white-space: nowrap; /* impede quebra de linha */
+    margin-bottom: 12px;
 }
 
 
-/* Define uma largura fixa para os títulos (esquerda) */
+
+/* Alinha as labels à esquerda numa coluna */
 .order-summary .item span:first-child,
 .order-summary .subtotal span:first-child,
 .order-summary .taxa span:first-child,
 .order-summary .total span:first-child {
-    width: 220px;
-    /* largura fixa da coluna de títulos */
-    text-align: left;
+    width: 220px;        /* ajuste se preciso */
+    display: inline-block;
+    text-align: left;    /* agora alinhado à esquerda */
+    padding-left: 12px;  /* espaço entre borda e texto */
 }
-
-/* Define a largura da coluna de valores (direita) */
-.order-summary .item span:last-child,
-.order-summary .subtotal span:last-child,
-.order-summary .taxa span:last-child,
-.order-summary .total span:last-child {
-    flex: 1;
-    text-align: right;
-}
-
-/* Estilos visuais */
 .order-summary span {
     font-size: 14px;
     color: #868686;
 }
 
-/* Nome dos serviços */
 .order-summary .item span:first-child {
     color: #000000;
     font-weight: 600;
 }
-
-/* Nome subtotais */
 
 .order-summary .subtotal span:first-child {
     color: #868686;
     font-weight: 600;
 }
 
-/* Valores padrão */
 .order-summary .item span:last-child,
 .order-summary .subtotal span:last-child {
     color: #000000;
     font-weight: 600;
-    
 }
 
-/* Taxa de locomoção (Grátis) */
+.order-summary .taxa {
+    margin-top: 20px;
+}
+
 .order-summary .taxa span:first-child {
     color: #868686;
     font-weight: 600;
-     margin-top: 20px;
 }
 
 .order-summary .taxa span:last-child {
     color: #2563EB;
     font-weight: 600;
-     margin-top: 20px;
 }
 
-/* Total final */
 .order-summary .total {
     margin-top: 25px;
 }
@@ -511,29 +385,45 @@ margin-bottom: 67px;
     color: #2563EB;
     font-weight: 600;
 }
+
 .order-summary .secure {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    position: absolute;
+    bottom: 70px;
+    left: -70px;
     margin-top: 15px;
     padding-top: 10px;
     text-align: center;
 }
 
 .order-summary .secure img {
-
-   margin: 8px 0 0 191px;
-
-  
+    margin: 8px 0 0 191px;
 }
 
 .order-summary .secure span {
     font-size: 14px;
     font-weight: 600;
     color: #797979;
-   
 }
-body {
-    background: linear-gradient(0deg, rgba(37, 99, 235, 0.8) -10%, rgba(255, 255, 255, 0) 100%);
+
+.card-blur {
+    position: fixed;
+    right: -100px;
+    bottom: 40px;
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+}
+
+.triangulo {
+    position: fixed;
+    right: -150px;
+    bottom: 0;
+    border-left: 420px solid transparent;
+    border-top: 320px solid #1a1f3b;
+    z-index: 2;
 }
