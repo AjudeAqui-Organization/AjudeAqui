@@ -16,6 +16,7 @@ main {
   align-items: center;
   flex-direction: column;
   background-image: url("../../assets/images/gif-jardim.gif");
+  background-size: cover;
 }
 
 .slogan {

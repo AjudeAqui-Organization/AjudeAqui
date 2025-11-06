@@ -41,8 +41,35 @@ main {
     height: 300px;
     border-radius: 20px;
     display: flex;
-    justify-self: end;
-    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    position: relative; /* Para posicionar os ícones */
+}
+
+.jardim-dos-sonhos .icon {
+    position: absolute;
+    font-size: 24px;
+    color: #333;
+}
+
+.jardim-dos-sonhos .icon.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.jardim-dos-sonhos .icon.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.jardim-dos-sonhos .icon.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.jardim-dos-sonhos .icon.bottom-right {
+    bottom: 10px;
+    right: 10px;
 }
 
 .jardim-dos-sonhos>h3 {
