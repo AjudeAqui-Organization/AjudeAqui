@@ -13,14 +13,20 @@
     <header>
         <div class="header-content">
             <img src="../../assets/images/image-profissional-p.png" alt="Ícone do trabalhador" class="header-icon" />
-            <span>Finalize sua compra com confiança</span>
-            <span>Conclua seu pagamento de forma rápida e segura abaixo</span>
-        </div>
+
+            <div class="header-text">
+                <h1>Finalize sua compra com confiança</h1>
+                <p>
+                    <a href="../Home/index.html" style="color: inherit; text-decoration: none">Início</a> / Conclua seu
+                    pagamento
+                </p>
+            </div>
+
     </header>
     <main>
         <section>
             <form action="/process-payment" method="POST">
-                <div class="form-group"> <label for="infocliente"> Informações do Clientes </label> <input type="text"
+                <div class="form-group"> <label for="infocliente"> Informação de pagamento </label> <input type="text"
                         id="card-number" name="card-number" placeholder="Número do cartão" required> <input type="text"
                         id="card-holder" name="card-holder" placeholder="Nome do titular" required>
                     <div class="date-cvv-container">
@@ -59,8 +65,14 @@
                             de Privacidade</a></label>
                     <label><input type="checkbox"> Autorizo o uso dos meus dados para o pagamento</label>
                     <label><input type="checkbox"> Aceito receber atualizações sobre meu pedido e ofertas</label>
-                    <button type="submit">Concluir Pagamento </button>
+
+                    <button type="button" onclick="window.location.href='../Home/index.html'">
+                        Concluir Pagamento
+                    </button>
+
+
                 </div>
+
 
                 <div class="order-summary">
                     <h2>Resumo do pedido</h2>
@@ -103,7 +115,7 @@
 
         </section>
     </main>
-        
+
 </body>
 
 </html>
