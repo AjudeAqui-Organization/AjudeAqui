@@ -4,23 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+  <!-- aqui tá sendo carregada a fonte Poppins direto do Google, que é uma fonte leve, moderna e usada pra deixar o visual do texto mais padronizado e bonito em todos os navegadores -->
+
   <link rel="stylesheet" href="index.css">
+  <!-- esse link chama o arquivo CSS principal da página, onde ficam todas as regras de estilo, cores, espaçamentos e fontes usadas no layout -->
+
   <title>Página de Pagamento</title>
+  <!-- esse é o nome que aparece lá na aba do navegador, quando a pessoa tá com a página aberta -->
 </head>
 
 <body>
   <header>
     <div class="header-content">
       <img src="../../assets/images/image-profissional-p.png" alt="Ícone do trabalhador" class="header-icon">
+      <!-- imagem do trabalhador que aparece no topo da tela, ajuda a manter uma identidade visual e dá um toque mais humano à página -->
 
       <div class="header-text">
         <h1>Finalize sua compra com confiança</h1>
+        <!-- esse título é a primeira coisa que o usuário vê no topo, então ele transmite segurança e confiança pro momento do pagamento -->
+
         <p>
           <a href="../Home/index.html" style="color: inherit; text-decoration: none;">Início</a> / Conclua seu pagamento
         </p>
+        <!-- aqui tem o caminho de navegação (breadcrumb), mostrando que o usuário veio da página inicial e agora está na de pagamento -->
       </div>
     </div>
   </header>
@@ -28,11 +38,18 @@
   <main>
     <section>
       <form action="/process-payment" method="POST">
+        <!-- esse form é o principal da página, ele envia os dados do cartão e da forma de pagamento pro servidor -->
+        
         <!-- Informações de pagamento -->
         <div class="form-group">
           <label for="infocliente">Informações de pagamento</label>
+          <!-- esse label serve como título da seção onde o usuário vai preencher os dados do cartão -->
+
           <input type="text" id="card-number" name="card-number" placeholder="Número do cartão" required>
+          <!-- campo pro número do cartão de crédito, com placeholder orientando o usuário -->
+          
           <input type="text" id="card-holder" name="card-holder" placeholder="Nome do titular" required>
+          <!-- campo pro nome impresso no cartão, obrigatório pra validar o pagamento -->
 
           <div class="date-cvv-container">
             <div class="input-group">
@@ -41,14 +58,18 @@
             <div class="input-group">
               <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
             </div>
+            <!-- esses dois inputs ficam lado a lado, um pra data de validade e outro pro CVV, deixando o preenchimento mais organizado -->
           </div>
 
           <input type="text" id="installments" name="installments" placeholder="Parcelamento" required>
+          <!-- campo pra escolher em quantas parcelas o pagamento será feito -->
         </div>
 
         <!-- Métodos de pagamento -->
         <div class="inner-box">
           <label>Método de Pagamento</label>
+          <!-- título da parte onde o usuário escolhe como quer pagar: crédito, débito, PIX ou boleto -->
+
           <div class="payment-methods">
             <label>
               <input type="radio" name="payment" value="credito" required>
@@ -66,24 +87,34 @@
               <input type="radio" name="payment" value="boleto" required>
               <p class="method-text">Boleto</p>
             </label>
+            <!-- cada opção de pagamento tem um input do tipo radio, e o texto ao lado mostra de forma clara qual método tá sendo selecionado -->
           </div>
         </div>
 
         <!-- Termos e condições -->
         <div class="terms-box">
+          <!-- aqui ficam os checkboxes com as autorizações que o usuário precisa marcar antes de finalizar -->
+
           <label><input type="checkbox"> Li e aceito os <a href="#">Termos de Uso</a> e a <a href="#">Política de
               Privacidade</a></label>
-          <label><input type="checkbox"> Autorizo o uso dos meus dados para o pagamento</label>
-          <label><input type="checkbox"> Aceito receber atualizações sobre meu pedido e ofertas</label>
+          <!-- primeiro checkbox pra confirmar que o usuário aceita os termos e políticas do site -->
 
+          <label><input type="checkbox"> Autorizo o uso dos meus dados para o pagamento</label>
+          <!-- esse segundo é pra permitir o uso dos dados pessoais no processamento da compra -->
+
+          <label><input type="checkbox"> Aceito receber atualizações sobre meu pedido e ofertas</label>
+          <!-- e esse último é opcional, serve pra autorizar o envio de comunicações e promoções -->
+          
           <button type="button" onclick="window.location.href='../Home/index.html'">
             Concluir Pagamento
           </button>
+          <!-- botão que finaliza a ação, levando o usuário de volta pra página inicial depois que tudo estiver certo -->
         </div>
 
         <!-- Resumo do pedido -->
         <div class="order-summary">
           <h2>Resumo do pedido</h2>
+          <!-- título da parte onde o cliente vê o que tá comprando e o valor total -->
 
           <div class="initial-itens">
             <div class="item">
@@ -95,6 +126,7 @@
               <p>Serviço de Limpeza</p>
               <p>R$100,00</p>
             </div>
+            <!-- esses blocos mostram os serviços que foram adicionados ao pedido e seus preços individuais -->
           </div>
 
           <div class="item-wrapper">
@@ -112,11 +144,13 @@
               <p>TOTAL</p>
               <p>R$290,90</p>
             </div>
+            <!-- essa parte resume o valor total da compra, incluindo taxas e o subtotal -->
           </div>
 
           <div class="secure">
             <img src="/src/assets/Icons/cadeado-verde.svg" alt="cadeado">
             <p>Pagamento seguro</p>
+            <!-- pequena seção de reforço visual mostrando um cadeado verde, pra passar confiança de que o pagamento é seguro -->
           </div>
         </div>
       </form>
