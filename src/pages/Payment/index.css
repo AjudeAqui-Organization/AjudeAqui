@@ -6,10 +6,15 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
+    background: linear-gradient(0deg, rgba(37, 99, 235, 0.9) -10%, rgba(255, 255, 255, 0) 100%);
 }
+
+/* HEADER */
 header {
     position: relative;
+    width: 100%;
+    height: 172px;
+    background-color: #2563EB;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,24 +22,30 @@ header {
 
 .header-icon {
     position: absolute;
-    right: 940px; /* ajusta pra mais ou menos direita */
+    right: 700px;
     top: 50%;
     transform: translateY(-50%);
-    width: 150px; /* opcional */
+    width: 150px;
     height: auto;
+    z-index: 9999;
 }
 
-header {
-    width: 100%;
-    height: 172px;
-    background-color: #2563EB;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.header-text h1 {
+    font-size: 32px;
+    margin: 10px;
+    color: #FFFFFF;
+}
+
+.header-text p {
+    font-size: 20px;
+    margin-top: -5px;
+    text-align: center;
+    color: #C1C1C1;
+    font-weight: 500;
 }
 
 .header-content {
+    position: absolute;
     display: flex;
     flex-direction: column;
     gap: -1px;
@@ -44,25 +55,7 @@ header {
     max-width: 800px;
 }
 
-/* Título da header*/
-span:first-of-type {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    color: #FFFFFF;
-    width: 100%;
-    text-align: center;
-}
-/* Sub-título da header*/
-span:last-of-type {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 20;
-    color: #C1C1C1;
-    width: 100%;
-    text-align: center;
-}
-
+/* MAIN */
 main {
     padding: 20px;
 }
@@ -72,12 +65,11 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    min-height: calc(100vh - 80px);
+    min-height: calc(170vh - 80px);
     text-align: left;
-    font-family: 'Poppins', sans-serif;
-     
 }
 
+/* FORM */
 form {
     position: relative;
     display: flex;
@@ -85,7 +77,7 @@ form {
     gap: -20px;
     width: 1072px;
     height: 727px;
-    margin-top: 40px;
+    margin-top: 80px;
     background: white;
     padding: 40px;
     border-radius: 20px;
@@ -98,31 +90,18 @@ form {
     flex-direction: column;
     align-items: flex-start;
     gap: 11px;
-    
 }
 
 .date-cvv-container {
     display: flex;
     justify-content: space-between;
-    /* empurra os campos para as extremidades */
-    gap: 40px;
-    /* aumenta o espaço entre eles */
-    width: 100%;
-}
-
-.date-cvv-container {
-    display: flex;
-    justify-content: space-between;
-    /* empurra os campos para as extremidades */
     gap: 30px;
-    /* aumenta o espaço entre eles */
     width: 100%;
 }
 
 .date-cvv-container .input-group:first-child {
     flex: 2;
     width: 320px;
-    /* data de validade maior */
 }
 
 .date-cvv-container .input-group:last-child {
@@ -139,7 +118,6 @@ form {
 label {
     text-align: left;
     margin-bottom: 3px;
-    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     color: #333333;
 }
@@ -147,33 +125,28 @@ label {
 label[for="infocliente"] {
     display: inline;
     white-space: nowrap;
-    font-size: 25px;
+    font-size: 32px;
     font-weight: 600;
-    margin-top: -10px;
+    margin-top: -8px;
     margin-bottom: 16px;
-     color: #000000;
+    color: #000000;
 }
 
-/* inputs com fundo branco e placeholder como texto */
 input {
     width: 100%;
+    height: 44px;
     padding: 8px;
-    margin: 0px 0;
     font-family: 'Poppins', sans-serif;
-    font-size: 10px;
-    border: 1.5px solid #2563EB;
+    font-size: 12px;
+    border: 1px solid #2563EB;
     border-radius: 6px;
     background: #ffffff;
-    /* garante sem preenchimento colorido */
     color: #000000;
-    /* cor do texto digitado */
 }
 
-/* estilo opcional do placeholder (mantém só texto cinza, sem fundo) */
 input::placeholder {
     color: #656565;
     opacity: 1;
- 
 }
 
 input:focus {
@@ -181,7 +154,6 @@ input:focus {
     border-color: #2563EB;
 }
 
-/* borda específica para parcelamento */
 #installments {
     border-color: #656565;
 }
@@ -197,134 +169,96 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    font-weight: 500;
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     font-size: 13px;
     border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
-    background-color: #1D4ED8;
+    background-color: #1a47c2;
 }
-/*Começo da métodos de pagamento */
-/* Inner box para métodos de pagamento */
+
+/* MÉTODOS DE PAGAMENTO */
 .inner-box {
     width: 485px;
     background: #ffffff;
     border-radius: 12px;
-     box-shadow: 0px 4px 4px rgba(32, 20, 255, 0.33), /* sombra embaixo (azul) */
-                0 -4px 20px rgba(0, 0, 0, 0.17); /* sombra em cima (azul) */
+    box-shadow: 0px 4px 4px rgba(32, 20, 255, 0.33),
+                0 -4px 20px rgba(0, 0, 0, 0.17);
     padding: 16px;
-    height: 80px;
-    margin-top: 20px;
+    height: 90px;
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-/* Centraliza o título dentro da inner-box */
 .inner-box label {
     display: block;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 14px;
     color: #000000;
     position: relative;
-    top: -8px; /* ajuste o valor negativo para subir mais */
+    top: 3px;
 }
 
-
-/* Layout dos métodos de pagamento */
-/* Container geral — mantém todos os labels lado a lado */
 .payment-methods {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;          /* espaço entre os métodos */
-    flex-wrap: nowrap;  /* impede quebra de linha */
+    gap: 20px;
+    flex-wrap: nowrap;
     white-space: nowrap;
 }
 
-/* Cada label — quadrado + texto lado a lado */
 .payment-methods label {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 6px;
     cursor: pointer;
     white-space: nowrap;
+    position: relative;
+    top: 5px;
 }
 
-/* Texto ao lado do quadrado */
-.payment-methods label span {
+.payment-methods p {
     display: inline-block;
     color: #000000;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 11px;
-    position: relative;
-    top: 3px; /* ajuste fino */
-    transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
+    line-height: 1;
+    margin: 0;
 }
 
-/* Quadrado customizado dos radio buttons */
-.payment-methods label::before {
-    content: "";
-    display: inline-block;
-    width: 10px;  
-    height: 8px;  
-    border: 1px solid #000; /* borda preta sempre visível */
-    border-radius: 2px;
-    background: #fff;  
-     position: relative;
-    top: 3px;
-    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
-}
-
-/* Hover: quadrado azul preenchido e label inteiro sobe */
 .payment-methods label:hover {
-    transform: translateY(-6px); /* sobe label + quadrado */
-    color: #000; /* mantém texto preto */
+    transform: translateY(-6px);
+    color: #000;
 }
 
-.payment-methods label:hover::before {
-    background: #6D92E4; /* preenchimento azul */
-    /* borda continua preta */
-}
-
-/* Quadrado marcado */
-.payment-methods input[type="radio"]:checked + span::before {
-    background: #2563EB;
-    border-color: #000; /* borda preta sempre */
-}
-
-/* Oculta o input real */
 .payment-methods input[type="radio"] {
-    display: none;
+    width: 10px;
+    height: 10px;
+    accent-color: #2563EB;
+    cursor: pointer;
 }
 
-/* Faz o span interagir com o quadrado */
-.payment-methods label span {
-    display: flex;
-    align-items: center;
-}
-/* Caixa de termos */
+/* TERMOS */
 .terms-box {
     width: 485px;
     height: 102px;
     font-size: 10px;
-    font-weight: 400;
     background: #ffffff;
     border-radius: 10px;
-    box-shadow:0px 4px 4px rgba(32, 20, 255, 0.27), /* sombra embaixo (azul) */
-                0 -4px 20px rgba(0, 0, 0, 0.15); /* sombra em cima (azul) */ 
-                
+    box-shadow: 0px 4px 4px rgba(32, 20, 255, 0.27),
+                0 -4px 20px rgba(0, 0, 0, 0.15);
     padding: 18px 24px;
-    margin-top: 20px;
+    margin-top: 34px;
     display: flex;
     flex-direction: column;
     gap: -10px;
-    font-family: 'Poppins', sans-serif;
     color: #000;
 }
 
@@ -332,6 +266,8 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 8px;
+    font-size: 11px;
+    font-weight: 500;
 }
 
 .terms-box input[type="checkbox"] {
@@ -342,4 +278,129 @@ button:hover {
 
 .terms-box a {
     color: #2563EB;
+}
+
+/* RESUMO DO PEDIDO */
+.order-summary {
+    position: absolute;
+    top: 107px;
+    right: 49px;
+    width: 420px;
+    height: 484px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    z-index: 4;
+}
+
+.order-summary h2 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #2563EB;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.order-summary .initial-itens {
+    margin-bottom: 80px;
+}
+
+.order-summary .item,
+.order-summary .subtotal,
+.order-summary .taxa,
+.order-summary .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    white-space: nowrap;
+    margin-bottom: 12px;
+}
+
+/* Alinha os textos agora com <p> */
+.order-summary p {
+    font-size: 14px;
+    color: #868686;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.order-summary .item p:first-child,
+.order-summary .subtotal p:first-child,
+.order-summary .taxa p:first-child,
+.order-summary .total p:first-child {
+    width: 220px;
+    display: inline-block;
+    text-align: left;
+   
+}
+
+.order-summary .item p:first-child {
+    color: #000000;
+    font-weight: 600;
+}
+
+.order-summary .subtotal p:first-child {
+    color: #868686;
+    font-weight: 600;
+   
+}
+
+.order-summary .item p:last-child,
+.order-summary .subtotal p:last-child {
+    color: #000000;
+    font-weight: 600;
+    text-align: right;
+    
+}
+
+.order-summary .taxa p:first-child {
+    color: #868686;
+    font-weight: 600;
+    
+}
+
+.order-summary .taxa p:last-child {
+    color: #2563EB;
+    font-weight: 600;
+    text-align: right !important;
+}
+
+.order-summary .total p:first-child {
+    color: #000000;
+    font-weight: 600;
+}
+
+.order-summary .total p:last-child {
+    color: #2563EB;
+    font-weight: 600;
+    text-align: right;
+}
+
+/* PAGAMENTO SEGURO */
+.order-summary .secure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 70px;
+    left: -70px;
+    margin-top: 15px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.order-summary .secure img {
+    margin: 8px 0 0 191px;
+}
+
+.order-summary .secure p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #797979;
 }

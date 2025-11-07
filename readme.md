@@ -34,7 +34,7 @@ Projeto desenvolvido no **SENAI-Suíço Brasileiro**, como parte das atividades 
 
 ## 👥 Equipe
 
-- *Victor, Heitor, Cauê, Kenps, David, Ryan*  
+- *Victor, Heitor, Cauê, Kenps, David, Ryan L*  
 - *Curso / 2DM*  
 - *Ano:* 2025
 
