@@ -12,7 +12,11 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+
+background: linear-gradient(0deg, #050e25 0%, rgb(37, 82, 180) 100%);
+    /* degrade azul claro para um escuro que deixa o fundo com uma pegada mais suave e leve */
 }
+
 
 .container {
     background-color: #ffffff;
