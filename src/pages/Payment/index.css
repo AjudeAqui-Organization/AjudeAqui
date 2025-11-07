@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(0deg, rgba(37, 99, 235, 0.8) -10%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(0deg, rgba(37, 99, 235, 0.9) -10%, rgba(255, 255, 255, 0) 100%);
 }
 
 header {
@@ -20,12 +20,13 @@ header {
 }
 
 .header-icon {
-    position: absolute;
-    right: 940px;
+    position: absolute; /* positioned relative to header */
+    right: 980px; /* original exact horizontal position */
     top: 50%;
     transform: translateY(-50%);
     width: 150px;
     height: auto;
+    z-index: 9999;
 }
 
 .header-content {
@@ -63,7 +64,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    min-height: calc(100vh - 80px);
+    min-height: calc(150vh - 80px);
     text-align: left;
 }
 
@@ -74,7 +75,7 @@ form {
     gap: -20px;
     width: 1072px;
     height: 727px;
-    margin-top: 40px;
+    margin-top: 80px;
     background: white;
     padding: 40px;
     border-radius: 20px;
@@ -280,7 +281,7 @@ button:hover {
 .terms-box input[type="checkbox"] {
     width: 10px;
     height: 10px;
-    accent-color: #000e2c;
+    accent-color: #2563EB;
 }
 
 .terms-box a {
@@ -325,6 +326,12 @@ button:hover {
     margin-bottom: 12px;
 }
 
+.order-summary .subtotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 
 /* Alinha as labels à esquerda numa coluna */
@@ -356,10 +363,17 @@ button:hover {
 .order-summary .subtotal span:last-child {
     color: #000000;
     font-weight: 600;
+    text-align: right;
+
 }
 
 .order-summary .taxa {
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    white-space: nowrap;
 }
 
 .order-summary .taxa span:first-child {
@@ -370,10 +384,20 @@ button:hover {
 .order-summary .taxa span:last-child {
     color: #2563EB;
     font-weight: 600;
+    text-align: right !important;
+
+}
+
+.order-summary .taxa span {
+    white-space: nowrap;
+
 }
 
 .order-summary .total {
     margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .order-summary .total span:first-child {
@@ -384,7 +408,10 @@ button:hover {
 .order-summary .total span:last-child {
     color: #2563EB;
     font-weight: 600;
+    text-align: right;
 }
+
+
 
 .order-summary .secure {
     display: flex;
@@ -406,24 +433,4 @@ button:hover {
     font-size: 14px;
     font-weight: 600;
     color: #797979;
-}
-
-.card-blur {
-    position: fixed;
-    right: -100px;
-    bottom: 40px;
-    width: 320px;
-    height: 200px;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    z-index: 3;
-}
-
-.triangulo {
-    position: fixed;
-    right: -150px;
-    bottom: 0;
-    border-left: 420px solid transparent;
-    border-top: 320px solid #1a1f3b;
-    z-index: 2;
 }
