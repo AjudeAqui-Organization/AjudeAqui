@@ -42,6 +42,24 @@ main {
     transition: all 0.2s ease;
 }
 
+.btn-jardinagem>button {
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #2563eb;
+    color: white;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-jardinagem>button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .btn-service>button:hover {
     transform: translateY(-2px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -65,14 +83,11 @@ main {
 
 .value-service h5 {
     font-size: 16px;
-    color: #6b7280;
     margin-bottom: 4px;
 }
 
 .value-service p {
-    font-size: 24px;
-    font-weight: bold;
-    color: #111827;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
@@ -254,6 +269,7 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .solicitar>h5 {
