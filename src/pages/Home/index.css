@@ -107,19 +107,30 @@ main .hero {
 /* Etiquetas */
 
 /* Container com 2 linhas e 3 colunas  */
+/* Primeira e segunda fileira de cards */
 .three-primary-cards,
 .three-second-cards {
-  display: flex;
-  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 32px;
   justify-items: center;
-  padding: 20px 200px;
-  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+  padding: 20px 0;
 }
 
-/* Card individual */
+
+/* Segunda fileira com espaçamento extra em cima */
+.three-second-cards {
+  margin-top: 40px;
+}
+
+
+
 .card-service {
   width: 260px;
+  min-height: 330px;
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -278,14 +289,23 @@ main .hero {
 }
 
 .Funcionalidades {
-  display: grid;
-  flex-direction: column;
+  position: relative;
+  width: 1200px;      
+  margin: 0 auto;    
+  padding: 50px 0;    
+  display: flex;
+  flex-wrap: nowrap;  
   justify-content: center;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-  justify-items: center;
-  padding: 50px 350px;
+  gap: 110px; 
 }
+
+.Funcionalidades .column-one,
+.Funcionalidades .column-two {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* aproxima os cards dentro de cada coluna */
+}
+
 
 /* Card individual */
 .card-life {
@@ -413,3 +433,4 @@ main .hero {
 .solicitar>img {
   margin-left: 10px;
 }
+
