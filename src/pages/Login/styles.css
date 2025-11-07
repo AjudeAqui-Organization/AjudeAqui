@@ -77,7 +77,7 @@ h2 {
 .input-address a {
     font-size: 14px;
     color: #2563eb;
-    text-decoration: none; /* Essa parada remove o sublinhado do link */
+    text-decoration: none;
     }
 
     .input-icon {
@@ -87,7 +87,8 @@ h2 {
     }
 
 input {
-  padding: 16px 16px 16px 45px; /* Adiciona espaço à esquerda para o ícone */
+  border: 2px;
+  padding: 16px 16px 16px 45px;
   width: 100%;
   border-radius: 11px;
   border: none;
@@ -105,12 +106,12 @@ input {
   padding: 12px;
   margin-top: 10px;
   font-weight: bold;
-  cursor: pointer; /* isso aqui muda o cursor quando passa por cima do botão */
+  cursor: pointer;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background: #1d4ed8; /* Efeito para escurecer a cor ao passar o mouse, certo? yessssss */
+  background: #1d4ed8;
 }
 
 .divider {
@@ -126,15 +127,15 @@ input {
   padding: 0 10px;
   color: #000;
   font-size: 14px;
-  white-space: nowrap;    /* evita quebra de linha */
-  z-index: 1;  /* garante que o texto fique acima das linhas */
+  white-space: nowrap;
+  z-index: 1;
 }
 .divider::before, 
 .divider::after {
   content: "";
-  flex: 1; /* ocupa espaço igual dos dois lados */
+  flex: 1;
   height: 1px;
-  background: #d7d3ff !important; /* cor da linha */
+  background: #d7d3ff !important;
 }
 
 .google-btn {
@@ -170,4 +171,5 @@ input {
   color: #2563eb;
   text-decoration: none;
   font-weight: bold;
+  outline: none;
 }
