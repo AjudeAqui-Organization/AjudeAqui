@@ -9,6 +9,7 @@ body {
     background: linear-gradient(0deg, rgba(37, 99, 235, 0.9) -10%, rgba(255, 255, 255, 0) 100%);
 }
 
+/* HEADER */
 header {
     position: relative;
     width: 100%;
@@ -20,30 +21,31 @@ header {
 }
 
 .header-icon {
-    position: absolute; /* positioned relative to header */
-    right: 700px; /* original exact horizontal position */
+    position: absolute;
+    right: 700px;
     top: 50%;
     transform: translateY(-50%);
     width: 150px;
     height: auto;
     z-index: 9999;
 }
+
 .header-text h1 {
-  font-size: 32px;
-  margin: 10px;
-  color: #FFFFFF;
+    font-size: 32px;
+    margin: 10px;
+    color: #FFFFFF;
 }
 
 .header-text p {
-  font-size: 20px;
-  margin-top: -5px;
-  text-align: center;
-   color: #C1C1C1;
+    font-size: 20px;
+    margin-top: -5px;
+    text-align: center;
+    color: #C1C1C1;
+    font-weight: 500;
 }
 
-
 .header-content {
-    position: absolute; 
+    position: absolute;
     display: flex;
     flex-direction: column;
     gap: -1px;
@@ -53,22 +55,7 @@ header {
     max-width: 800px;
 }
 
-span:first-of-type {
-    font-weight: 600;
-    font-size: 32px;
-    color: #FFFFFF;
-    width: 100%;
-    text-align: center;
-}
-
-span:last-of-type {
-    font-weight: 400;
-    font-size: 20px;
-    color: #C1C1C1;
-    width: 100%;
-    text-align: center;
-}
-
+/* MAIN */
 main {
     padding: 20px;
 }
@@ -82,6 +69,7 @@ section {
     text-align: left;
 }
 
+/* FORM */
 form {
     position: relative;
     display: flex;
@@ -148,9 +136,9 @@ input {
     width: 100%;
     height: 44px;
     padding: 8px;
-    margin: 0px 0;
+    font-family: 'Poppins', sans-serif;
     font-size: 12px;
-    border: 2px solid #2563EB;
+    border: 1px solid #2563EB;
     border-radius: 6px;
     background: #ffffff;
     color: #000000;
@@ -170,7 +158,6 @@ input:focus {
     border-color: #656565;
 }
 
-
 button {
     position: absolute;
     bottom: 40px;
@@ -182,7 +169,8 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    font-weight: 540;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     font-size: 13px;
     border-radius: 20px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
@@ -192,6 +180,7 @@ button:hover {
     background-color: #1a47c2;
 }
 
+/* MÉTODOS DE PAGAMENTO */
 .inner-box {
     width: 485px;
     background: #ffffff;
@@ -232,32 +221,16 @@ button:hover {
     cursor: pointer;
     white-space: nowrap;
     position: relative;
-    top: -10px;
+    top: 5px;
 }
 
-.payment-methods label span {
+.payment-methods p {
     display: inline-block;
     color: #000000;
     font-weight: 500;
     font-size: 11px;
     line-height: 1;
-    margin-top: 1px;
-}
-
-.payment-methods input[type="checkbox"] {
-    width: 10px;
-    height: 8px;
-    border: 2px solid #000;
-    border-radius: 2px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background: #fff;
-    cursor: pointer;
     margin: 0;
-    padding: 0;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .payment-methods label:hover {
@@ -265,11 +238,14 @@ button:hover {
     color: #000;
 }
 
-.payment-methods input[type="checkbox"]:checked {
-    background: #2563EB;
-    border-color: #000;
+.payment-methods input[type="radio"] {
+    width: 10px;
+    height: 10px;
+    accent-color: #2563EB;
+    cursor: pointer;
 }
 
+/* TERMOS */
 .terms-box {
     width: 485px;
     height: 102px;
@@ -291,7 +267,7 @@ button:hover {
     align-items: center;
     gap: 8px;
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .terms-box input[type="checkbox"] {
@@ -304,6 +280,7 @@ button:hover {
     color: #2563EB;
 }
 
+/* RESUMO DO PEDIDO */
 .order-summary {
     position: absolute;
     top: 107px;
@@ -321,7 +298,7 @@ button:hover {
 }
 
 .order-summary h2 {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
     color: #2563EB;
     text-align: center;
@@ -330,105 +307,82 @@ button:hover {
 }
 
 .order-summary .initial-itens {
-    margin-bottom: 67px;
+    margin-bottom: 80px;
 }
 
-.order-summary .item {
+.order-summary .item,
+.order-summary .subtotal,
+.order-summary .taxa,
+.order-summary .total {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    white-space: nowrap; /* impede quebra de linha */
+    white-space: nowrap;
     margin-bottom: 12px;
 }
 
-.order-summary .subtotal {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-
-/* Alinha as labels à esquerda numa coluna */
-.order-summary .item span:first-child,
-.order-summary .subtotal span:first-child,
-.order-summary .taxa span:first-child,
-.order-summary .total span:first-child {
-    width: 220px;        /* ajuste se preciso */
-    display: inline-block;
-    text-align: left;    /* agora alinhado à esquerda */
-    padding-left: 12px;  /* espaço entre borda e texto */
-}
-.order-summary span {
+/* Alinha os textos agora com <p> */
+.order-summary p {
     font-size: 14px;
     color: #868686;
+    margin: 0;
+    line-height: 1.4;
 }
 
-.order-summary .item span:first-child {
+.order-summary .item p:first-child,
+.order-summary .subtotal p:first-child,
+.order-summary .taxa p:first-child,
+.order-summary .total p:first-child {
+    width: 220px;
+    display: inline-block;
+    text-align: left;
+   
+}
+
+.order-summary .item p:first-child {
     color: #000000;
     font-weight: 600;
 }
 
-.order-summary .subtotal span:first-child {
+.order-summary .subtotal p:first-child {
     color: #868686;
     font-weight: 600;
+   
 }
 
-.order-summary .item span:last-child,
-.order-summary .subtotal span:last-child {
+.order-summary .item p:last-child,
+.order-summary .subtotal p:last-child {
     color: #000000;
     font-weight: 600;
     text-align: right;
-
+    
 }
 
-.order-summary .taxa {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    white-space: nowrap;
-}
-
-.order-summary .taxa span:first-child {
+.order-summary .taxa p:first-child {
     color: #868686;
     font-weight: 600;
+    
 }
 
-.order-summary .taxa span:last-child {
+.order-summary .taxa p:last-child {
     color: #2563EB;
     font-weight: 600;
     text-align: right !important;
-
 }
 
-.order-summary .taxa span {
-    white-space: nowrap;
-
-}
-
-.order-summary .total {
-    margin-top: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.order-summary .total span:first-child {
+.order-summary .total p:first-child {
     color: #000000;
     font-weight: 600;
 }
 
-.order-summary .total span:last-child {
+.order-summary .total p:last-child {
     color: #2563EB;
     font-weight: 600;
     text-align: right;
 }
 
-
-
+/* PAGAMENTO SEGURO */
 .order-summary .secure {
     display: flex;
     align-items: center;
@@ -445,7 +399,7 @@ button:hover {
     margin: 8px 0 0 191px;
 }
 
-.order-summary .secure span {
+.order-summary .secure p {
     font-size: 14px;
     font-weight: 600;
     color: #797979;
