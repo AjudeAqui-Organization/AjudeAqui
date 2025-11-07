@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* zera tudo pra começar do zero, assim o layout fica uniforme em qualquer navegador */
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(0deg, rgba(37, 99, 235, 0.9) -10%, rgba(255, 255, 255, 0) 100%);
+    /* usa uma fonte moderna e esse degrade azul pra branco que deixa o fundo com uma pegada mais suave e leve */
 }
 
 /* HEADER */
@@ -18,6 +20,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* o header é uma barra azul grande que centraliza tudo, bem padrão de topo de página */
 }
 
 .header-icon {
@@ -28,12 +31,14 @@ header {
     width: 150px;
     height: auto;
     z-index: 9999;
+    /* esse ícone fica fixo dentro do header, deslocado manualmente pra direita; o translate centraliza ele certinho no meio vertical */
 }
 
 .header-text h1 {
     font-size: 32px;
     margin: 10px;
     color: #FFFFFF;
+    /* título grandão, branco, pra destacar no fundo azul */
 }
 
 .header-text p {
@@ -42,6 +47,7 @@ header {
     text-align: center;
     color: #C1C1C1;
     font-weight: 500;
+    /* texto de apoio em cinza claro, deixa o visual mais leve e não rouba atenção do título */
 }
 
 .header-content {
@@ -53,11 +59,13 @@ header {
     justify-content: center;
     width: 100%;
     max-width: 800px;
+    /* aqui é onde o título e o subtítulo ficam centralizados dentro do header, organizadinhos em coluna */
 }
 
 /* MAIN */
 main {
     padding: 20px;
+    /* dá aquele espaço nas bordas pra nada colar nas extremidades */
 }
 
 section {
@@ -67,6 +75,7 @@ section {
     justify-content: flex-start;
     min-height: calc(170vh - 80px);
     text-align: left;
+    /* a section é o corpo principal, com altura grande pra rolar a página; conteúdo centralizado e bem alinhado */
 }
 
 /* FORM */
@@ -82,6 +91,7 @@ form {
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+    /* o formulário é grande, com cantos arredondados e sombra pra dar destaque, parece um cartão flutuando */
 }
 
 .form-group {
@@ -90,6 +100,7 @@ form {
     flex-direction: column;
     align-items: flex-start;
     gap: 11px;
+    /* organiza os campos de cada grupo verticalmente, com espaçamento entre eles */
 }
 
 .date-cvv-container {
@@ -97,22 +108,26 @@ form {
     justify-content: space-between;
     gap: 30px;
     width: 100%;
+    /* deixa os campos de data e CVV lado a lado, bem distribuídos */
 }
 
 .date-cvv-container .input-group:first-child {
     flex: 2;
     width: 320px;
+    /* campo da data mais largo */
 }
 
 .date-cvv-container .input-group:last-child {
     flex: 0 0 100px;
     width: 100px;
+    /* campo do CVV menorzinho, pra manter proporção real dos inputs */
 }
 
 .input-group {
     flex: 1;
     display: flex;
     flex-direction: column;
+    /* organiza o label e o input em coluna */
 }
 
 label {
@@ -120,6 +135,7 @@ label {
     margin-bottom: 3px;
     font-size: 14px;
     color: #333333;
+    /* os rótulos dos campos são pequenos e discretos, só pra guiar o usuário */
 }
 
 label[for="infocliente"] {
@@ -130,6 +146,7 @@ label[for="infocliente"] {
     margin-top: -8px;
     margin-bottom: 16px;
     color: #000000;
+    /* esse label é o título da seção do formulário, então é maior e mais forte */
 }
 
 input {
@@ -142,20 +159,24 @@ input {
     border-radius: 6px;
     background: #ffffff;
     color: #000000;
+    /* inputs com borda azul, formato limpo, bem padrão de formulário moderno */
 }
 
 input::placeholder {
     color: #656565;
     opacity: 1;
+    /* cor do placeholder mais suave pra não distrair */
 }
 
 input:focus {
     outline: none;
     border-color: #2563EB;
+    /* mantém a borda azul quando o campo tá ativo, dá um feedback visual legal */
 }
 
 #installments {
     border-color: #656565;
+    /* esse campo específico fica com borda cinza pra diferenciar */
 }
 
 button {
@@ -174,10 +195,12 @@ button {
     font-size: 13px;
     border-radius: 20px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    /* botão centralizado embaixo do formulário, estilo moderno e com sombra pra parecer clicável */
 }
 
 button:hover {
     background-color: #1a47c2;
+    /* muda o tom do azul quando passa o mouse, pra dar aquele efeito de interação */
 }
 
 /* MÉTODOS DE PAGAMENTO */
@@ -193,6 +216,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    /* essa caixa envolve os métodos de pagamento, com sombra leve e bordas suaves, combina com o resto do layout */
 }
 
 .inner-box label {
@@ -203,6 +227,7 @@ button:hover {
     color: #000000;
     position: relative;
     top: 3px;
+    /* o título da caixa (tipo “método de pagamento”) centralizado e mais destacado */
 }
 
 .payment-methods {
@@ -212,6 +237,7 @@ button:hover {
     gap: 20px;
     flex-wrap: nowrap;
     white-space: nowrap;
+    /* os botões de método de pagamento ficam lado a lado, centralizados e alinhados */
 }
 
 .payment-methods label {
@@ -222,6 +248,7 @@ button:hover {
     white-space: nowrap;
     position: relative;
     top: 5px;
+    /* cada opção de pagamento é clicável e tem ícone + texto alinhados bonitinho */
 }
 
 .payment-methods p {
@@ -231,11 +258,13 @@ button:hover {
     font-size: 11px;
     line-height: 1;
     margin: 0;
+    /* texto dos nomes dos métodos, pequeno pra não ocupar muito espaço */
 }
 
 .payment-methods label:hover {
     transform: translateY(-6px);
     color: #000;
+    /* sobe levemente quando passa o mouse, dá sensação de “clicável” */
 }
 
 .payment-methods input[type="radio"] {
@@ -243,6 +272,7 @@ button:hover {
     height: 10px;
     accent-color: #2563EB;
     cursor: pointer;
+    /* bolinhas de seleção com cor azul pra manter o padrão */
 }
 
 /* TERMOS */
@@ -260,6 +290,7 @@ button:hover {
     flex-direction: column;
     gap: -10px;
     color: #000;
+    /* caixa dos termos com o mesmo estilo das outras: branca, sombra leve e cantos arredondados */
 }
 
 .terms-box label {
@@ -268,16 +299,19 @@ button:hover {
     gap: 8px;
     font-size: 11px;
     font-weight: 500;
+    /* organiza o checkbox e o texto dos termos lado a lado, tudo alinhadinho */
 }
 
 .terms-box input[type="checkbox"] {
     width: 10px;
     height: 10px;
     accent-color: #2563EB;
+    /* caixinha azul padrão pra marcar os termos */
 }
 
 .terms-box a {
     color: #2563EB;
+    /* link dos termos fica azul pra indicar clique */
 }
 
 /* RESUMO DO PEDIDO */
@@ -295,6 +329,7 @@ button:hover {
     font-weight: 500;
     color: #000000;
     z-index: 4;
+    /* caixinha do resumo, com sombra e bordas arredondadas, separada do formulário principal */
 }
 
 .order-summary h2 {
@@ -304,10 +339,12 @@ button:hover {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;
+    /* título do resumo em azul, centralizado, mantendo a identidade do layout */
 }
 
 .order-summary .initial-itens {
     margin-bottom: 80px;
+    /* espaço extra antes do total */
 }
 
 .order-summary .item,
@@ -320,66 +357,41 @@ button:hover {
     gap: 12px;
     white-space: nowrap;
     margin-bottom: 12px;
+    /* as linhas do resumo ficam bem alinhadas, com o nome do item de um lado e o valor do outro */
 }
 
-/* Alinha os textos agora com <p> */
 .order-summary p {
     font-size: 14px;
     color: #868686;
     margin: 0;
     line-height: 1.4;
-}
-
-.order-summary .item p:first-child,
-.order-summary .subtotal p:first-child,
-.order-summary .taxa p:first-child,
-.order-summary .total p:first-child {
-    width: 220px;
-    display: inline-block;
-    text-align: left;
-   
+    /* o texto dentro do resumo tem tom de cinza pra não ficar pesado */
 }
 
 .order-summary .item p:first-child {
     color: #000000;
     font-weight: 600;
+    /* nome do item destacado */
 }
 
 .order-summary .subtotal p:first-child {
     color: #868686;
     font-weight: 600;
-   
-}
-
-.order-summary .item p:last-child,
-.order-summary .subtotal p:last-child {
-    color: #000000;
-    font-weight: 600;
-    text-align: right;
-    
-}
-
-.order-summary .taxa p:first-child {
-    color: #868686;
-    font-weight: 600;
-    
+    /* subtotal em cinza pra diferenciar */
 }
 
 .order-summary .taxa p:last-child {
     color: #2563EB;
     font-weight: 600;
     text-align: right !important;
-}
-
-.order-summary .total p:first-child {
-    color: #000000;
-    font-weight: 600;
+    /* valor da taxa em azul pra chamar atenção */
 }
 
 .order-summary .total p:last-child {
     color: #2563EB;
     font-weight: 600;
     text-align: right;
+    /* total final também em azul, mantendo padrão visual */
 }
 
 /* PAGAMENTO SEGURO */
@@ -393,14 +405,17 @@ button:hover {
     margin-top: 15px;
     padding-top: 10px;
     text-align: center;
+    /* área que mostra que o pagamento é seguro, centralizada e próxima do fim do resumo */
 }
 
 .order-summary .secure img {
     margin: 8px 0 0 191px;
+    /* ícone do cadeado ou selo de segurança ajustado manualmente */
 }
 
 .order-summary .secure p {
     font-size: 14px;
     font-weight: 600;
     color: #797979;
+    /* texto "pagamento seguro" discreto e de tom neutro */
 }
