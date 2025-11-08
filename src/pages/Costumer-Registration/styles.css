@@ -1,7 +1,7 @@
 body {
   background-color: #f2f2f2;
   margin: 0;
-  font-family: Arial, sans-serif; 
+   font-family: 'Poppins', sans-serif;
 }
 
 /* Layout de página para permitir que o form preencha o espaço disponível sem empurrar o footer */
@@ -37,12 +37,14 @@ body {
 .header-text h1 {
   font-size: 32px;
   margin: 10px;
+  
 }
 
 .header-text p {
   font-size: 20px;
   margin-top: 20px;
   text-align: center;
+  
 }
 
 /* Estilos para o formulário de registro do cliente :) */
