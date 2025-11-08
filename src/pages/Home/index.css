@@ -15,9 +15,90 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image : url("../../assets/images/gif-jardim.gif");
+  background-image: url("../../assets/images/gif-jardim.gif");
   background-image: url("../../assets/images/gif-jardim.gif");
   background-size: cover;
+}
+
+botoes-container {
+  display: flex;
+  gap: 20px;
+}
+
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.botao-primario {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+}
+
+.botao-primario:hover {
+  background-color: #1d4ed8;
+}
+
+.botao-secundario {
+  background-color: #fff;
+  color: #2563eb;
+  border: 1.5px solid #2563eb;
+}
+
+.botao-secundario:hover {
+  background-color: #e8f0ff;
+}
+
+.icone {
+  font-size: 18px;
+}
+.botoes-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  /* padding: 12px 30px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease; */
+  margin-top: 30px;
+}
+
+.botao-servicos {
+  /* display: inline-block; */
+  padding: 12px 30px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.botao-servicos:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .slogan {
@@ -48,7 +129,7 @@ main .hero {
   margin-left: 45px;
 }
 
-.text>span {
+.text > span {
   font-size: 32px;
   font-weight: bold;
   color: #000000;
@@ -62,7 +143,7 @@ main .hero {
   color: #2563eb;
 }
 
-.text>p {
+.text > p {
   color: #656565;
   font-size: 15px;
   font-weight: 600;
@@ -120,13 +201,10 @@ main .hero {
   padding: 20px 0;
 }
 
-
 /* Segunda fileira com espaçamento extra em cima */
 .three-second-cards {
   margin-top: 40px;
 }
-
-
 
 .card-service {
   width: 260px;
@@ -290,13 +368,13 @@ main .hero {
 
 .Funcionalidades {
   position: relative;
-  width: 1200px;      
-  margin: 0 auto;    
-  padding: 50px 0;    
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
   display: flex;
-  flex-wrap: nowrap;  
+  flex-wrap: nowrap;
   justify-content: center;
-  gap: 110px; 
+  gap: 110px;
 }
 
 .Funcionalidades .column-one,
@@ -305,7 +383,6 @@ main .hero {
   flex-direction: column;
   gap: 16px; /* aproxima os cards dentro de cada coluna */
 }
-
 
 /* Card individual */
 .card-life {
@@ -430,7 +507,6 @@ main .hero {
   gap: 20px;
 }
 
-.solicitar>img {
+.solicitar > img {
   margin-left: 10px;
 }
-
