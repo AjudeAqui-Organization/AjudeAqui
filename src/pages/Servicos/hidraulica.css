@@ -1,0 +1,431 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 20px;
+  background-image: url("../../assets/images/gif-hidraulica.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu-servicos {
+  display: flex;
+  gap: 12px;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: white;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.botao img {
+  width: 20px;
+  height: 20px;
+}
+
+.botao:hover {
+  background-color: #e5e5e5;
+}
+
+.botao.ativo {
+  background-color: #2563eb; /* azul destaque */
+  color: white;
+}
+
+.botao.ativo:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-service {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.btn-service > button {
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-jardinagem > button {
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-jardinagem > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-service > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.value-service {
+  margin-top: 25px;
+}
+
+.value-service h5 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.value-service p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.jardim-dos-sonhos {
+  background-image: url("../../assets/images/gif-hidraulica.gif");
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.jardim-dos-sonhos .icon {
+  position: absolute;
+  font-size: 24px;
+  color: #333;
+}
+
+.jardim-dos-sonhos .icon.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.jardim-dos-sonhos .icon.top-right {
+  top: 10px;
+  right: 10px;
+}
+
+.jardim-dos-sonhos .icon.bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
+
+.jardim-dos-sonhos .icon.bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+.jardim-dos-sonhos > h3 {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.jardim-dos-sonhos > img {
+  width: 100px;
+  height: 120px;
+  justify-self: center;
+  align-items: center;
+}
+
+.title-service {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.subtitle-service {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.function-service {
+  margin-top: 25px;
+}
+
+.line-function {
+  width: 300px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 15px;
+  gap: 12px;
+  color: #4b5563;
+}
+
+.btn-solicitar:hover {
+  transform: translateY(-2px);
+}
+
+.solicitar > a {
+  margin-top: 60px;
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 12px 20px 12px 20px;
+}
+
+.all-call a {
+  /* border: solid #2563eb 1px; */
+  background-color: white;
+  color: #2563eb;
+}
+
+.all-call img {
+  margin-right: 10px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.solicitar-orc a {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 15px 24px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.solicitar-orc1 {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.solicitar-orc1 a {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hover1 .link:hover {
+  background-color: #1e40af;
+}
+
+.all-call {
+  background-color: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+  padding: 12px 24px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 180px;
+}
+
+.all-call img {
+  width: 20px;
+  height: 20px;
+}
+
+.all-call:hover {
+  background-color: #f8fafc;
+}
+
+.solicitar {
+  text-align: center;
+  padding: 40px;
+  margin-top: 40px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.solicitar > h5 {
+  font-size: 20px;
+  color: #111827;
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.solicitar > p {
+  font-size: 14px;
+  color: #4b5563;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.title-garantia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-garantia {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title-garantia > h3 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.title-garantia > p {
+  margin: 0;
+  font-size: 16px;
+  color: #4b5563;
+}
+
+.text-garantia > p {
+  font-size: 16px;
+  /* text-align: center; */
+}
+
+.text-garantia > h5 {
+  font-size: 20px;
+  /* text-align: center; */
+}
+
+.text-garantia {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.garantia-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.tittle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tittle-wrapper img {
+  width: 24px;
+  height: 24px;
+}
+
+.tittle-wrapper h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.garantia-item p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 36px;
+}
+
+.nossas-garantias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.link {
+  text-decoration: none;
+}
