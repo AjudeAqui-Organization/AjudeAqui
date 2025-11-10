@@ -18,11 +18,7 @@ main {
   background-image: url("../../assets/images/gif-jardim.gif");
   background-image: url("../../assets/images/gif-jardim.gif");
   background-size: cover;
-}
 
-botoes-container {
-  display: flex;
-  gap: 20px;
 }
 
 .botao {
@@ -71,19 +67,10 @@ botoes-container {
 }
 
 .btn {
-  /* padding: 12px 30px;
-  border: 2px solid #000;
-  border-radius: 30px;
-  color: #000;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  transition: all 0.3s ease; */
   margin-top: 30px;
 }
 
 .botao-servicos {
-  /* display: inline-block; */
   padding: 12px 30px;
   border: 2px solid #000;
   border-radius: 30px;
@@ -161,34 +148,12 @@ main .hero {
   margin-right: 60px;
 }
 
-.btn-slogan {
-  background-color: #ffffff;
-  border: solid black 2px;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #000000;
-  cursor: pointer;
-  width: fit-content;
-  margin-top: 10px;
-}
-
-.btn-slogan a {
-  text-decoration: none;
-  color: #000000;
-}
-
 .btn-slogan:hover {
   background-color: #2563eb;
   border: solid #2563eb 2px;
   color: #ffffff;
 }
 
-/* Etiquetas */
-
-/* Container com 2 linhas e 3 colunas  */
-/* Primeira e segunda fileira de cards */
 .three-primary-cards,
 .three-second-cards {
   display: grid;
@@ -201,7 +166,6 @@ main .hero {
   padding: 20px 0;
 }
 
-/* Segunda fileira com espaçamento extra em cima */
 .three-second-cards {
   margin-top: 40px;
 }
@@ -226,7 +190,6 @@ main .hero {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
-/* Ícone circular azul */
 .image-flor {
   width: 56px;
   height: 56px;
@@ -243,7 +206,6 @@ main .hero {
   height: 26px;
 }
 
-/* Título */
 .Jardinagem {
   font-size: 18px;
   color: #000;
@@ -251,7 +213,6 @@ main .hero {
   margin-bottom: 8px;
 }
 
-/* Texto */
 .text-card-service {
   font-size: 14px;
   color: #555;
@@ -259,7 +220,6 @@ main .hero {
   margin-bottom: 16px;
 }
 
-/* Etiquetas */
 .etiquetas {
   list-style: none;
   display: flex;
@@ -278,7 +238,6 @@ main .hero {
   color: #333;
 }
 
-/* Link Saiba Mais */
 .saiba-mais {
   color: #2563eb;
   text-decoration: none;
@@ -381,10 +340,9 @@ main .hero {
 .Funcionalidades .column-two {
   display: flex;
   flex-direction: column;
-  gap: 16px; /* aproxima os cards dentro de cada coluna */
+  gap: 16px;
 }
 
-/* Card individual */
 .card-life {
   width: 320px;
   max-width: 100%;
@@ -412,7 +370,6 @@ main .hero {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
-/* Ícone circular azul */
 .coracao {
   width: 56px;
   height: 56px;
@@ -429,7 +386,6 @@ main .hero {
   height: 26px;
 }
 
-/* Título */
 .text-funcionalidade {
   font-size: 18px;
   color: #000;
@@ -437,7 +393,6 @@ main .hero {
   margin-bottom: 8px;
 }
 
-/* Texto */
 .text-card-service {
   font-size: 14px;
   color: #555;
@@ -445,7 +400,6 @@ main .hero {
   margin-bottom: 16px;
 }
 
-/* Etiquetas */
 .etiquetas {
   list-style: none;
   display: flex;
@@ -454,31 +408,6 @@ main .hero {
   justify-content: center;
   padding: 0;
   margin: 0 0 16px 0;
-}
-
-.solicitar-arc button {
-  margin-top: 85px;
-  margin-bottom: 90px;
-  border-radius: 20px;
-  font-size: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.como-funciona {
-  border: solid #2563eb 1px;
-  background-color: white;
-  color: #2563eb;
-}
-
-.solicitar {
-  background-color: #2563eb;
-  border: solid #2563eb 1px;
-  color: white;
-  display: flex;
-  justify-content: center;
 }
 
 .solicitar:hover {
@@ -495,18 +424,9 @@ main .hero {
   transform: translateY(-2px);
 }
 
+
 .solicitar-arc h3 {
   font-size: 40px;
   font-weight: 600;
   text-align: center;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.solicitar > img {
-  margin-left: 10px;
-}
+} 
