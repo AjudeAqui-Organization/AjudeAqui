@@ -41,22 +41,8 @@
               <label for="cpf">CPF *</label>
               <input type="text" id="cpf" name="cpf" required placeholder="Digite seu CPF (somente números)" />
             </div>
-            <div class="form-group">
-              <label for="rg">RG *</label>
-              <input type="text" id="rg" name="rg" required placeholder="Digite seu RG" />
-            </div>
           </div>
           <div class="form-group-inline">
-            <div class="form-group">
-              <label for="estado-civil">Estado Civil</label>
-              <select id="estado-civil" name="estado-civil">
-                <option value="">Selecione</option>
-                <option value="solteiro(a)">Solteiro(a)</option>
-                <option value="casado(a)">Casado(a)</option>
-                <option value="divorciado(a)">Divorciado(a)</option>
-                <option value="viuvo(a)">Viúvo(a)</option>
-              </select>
-            </div>
             <div class="form-group">
               <label for="genero">Gênero</label>
               <select id="genero" name="genero">
@@ -64,7 +50,7 @@
                 <option value="masculino">Masculino</option>
                 <option value="feminino">Feminino</option>
                 <option value="outro">Outro</option>
-              </select>
+              </select> 
             </div>
             <div class="form-group">
               <label for="data-nascimento">Data de Nascimento *</label>
@@ -72,6 +58,20 @@
                 placeholder="Selecione sua data de nascimento" />
             </div>
           </div>
+                 <div class="form-group-inline">
+            <div class="form-group">
+              <label for="mei">Possui MEI? *</label>
+              <select id="mei" name="mei" required>
+                <option value="">Selecione</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cnpj">CNPJ (se possuir)</label>
+              <input type="text" id="cnpj" name="cnpj" />
+            </div>
+          </div>  
         </fieldset>
         <fieldset>
           <legend>
@@ -277,31 +277,9 @@
             <img src="../../assets/Icons/documentacao.svg" alt="Ícone Documentação" class="icon" />
             Documentação
           </legend>
-          <div class="form-group-inline">
-            <div class="form-group">
-              <label for="mei">Possui MEI? *</label>
-              <select id="mei" name="mei" required>
-                <option value="">Selecione</option>
-                <option value="sim">Sim</option>
-                <option value="nao">Não</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="cnpj">CNPJ (se possuir) *</label>
-              <input type="text" id="cnpj" name="cnpj" required />
-            </div>
-            <div class="form-group">
-              <label for="registro-profissional">Possui Registro Profissional? *</label>
-              <select id="registro-profissional" name="registro-profissional" required>
-                <option value="">Selecione</option>
-                <option value="sim">Sim</option>
-                <option value="nao">Não</option>
-              </select>
-            </div>
-          </div>
           <div class="form-group">
             <label for="certificacoes">Certificações e Cursos</label>
-            <textarea id="certificacoes" name="certificacoes"></textarea>
+            <textarea id="certificacoes" name="certificacoes" placeholder="Descreva suas certificações, cursos e qualificações"></textarea>
           </div>
           <div class="form-group">
             <label for="referencias">Referências</label>
@@ -324,11 +302,6 @@
               <input type="password" id="confirmar-senha" name="confirmar-senha" minlength="6" required
                 placeholder="Confirme sua senha" />
             </div>
-          </div>
-          <div class="form-group">
-            <label for="certificacoes-cursos">Certificações e Cursos</label>
-            <textarea id="certificacoes-cursos" name="certificacoes-cursos"
-              placeholder="Descreva suas certificações, cursos e qualificações"></textarea>
           </div>
         </fieldset>
         <fieldset>
