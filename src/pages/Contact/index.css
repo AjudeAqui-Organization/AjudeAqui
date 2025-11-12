@@ -26,8 +26,9 @@ main.contact-page {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 96px;
-  padding-bottom: 180px;
+  /* reduzir gap entre seções para aproximar FAQ do header */
+  gap: 28px;
+  padding-bottom: 80px;
 }
 
 .contact-hero {
@@ -65,7 +66,7 @@ main.contact-page {
 
 .hero-title {
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 10px;
   text-align: center;
   color: #ffffff;
   font-size: 22px;
@@ -303,6 +304,11 @@ main.contact-page {
   box-shadow: 0 24px 56px rgba(15, 23, 42, 0.12);
 }
 
+/* mover o formulário um pouco para cima para destacar o título 'Solicite seu Orçamento' */
+.panel-form {
+  transform: translateY(-18px);
+}
+
 .panel-form h3 {
   margin: 0;
   font-size: 26px;
@@ -454,13 +460,9 @@ main.contact-page {
   height: 18px;
 }
 
-.faq-section {
-  padding: 0 20px 140px;
-}
-
 .faq-container {
   width: min(1180px, 100%);
-  margin: 0 auto;
+  margin: 50px auto;
   background-color: #ffffff;
   border-radius: 34px;
   padding: 56px 64px;
